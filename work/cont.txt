@@ -1,0 +1,24 @@
+﻿Compiled from "Container.java"
+public interface net.minecraft.world.Container extends net.minecraft.world.Clearable {
+  public static final int f_146642_;
+  public static final int f_271421_;
+  public abstract int m_6643_();
+  public abstract boolean m_7983_();
+  public abstract net.minecraft.world.item.ItemStack m_8020_(int);
+  public abstract net.minecraft.world.item.ItemStack m_7407_(int, int);
+  public abstract net.minecraft.world.item.ItemStack m_8016_(int);
+  public abstract void m_6836_(int, net.minecraft.world.item.ItemStack);
+  public default int m_6893_();
+  public abstract void m_6596_();
+  public abstract boolean m_6542_(net.minecraft.world.entity.player.Player);
+  public default void m_5856_(net.minecraft.world.entity.player.Player);
+  public default void m_5785_(net.minecraft.world.entity.player.Player);
+  public default boolean m_7013_(int, net.minecraft.world.item.ItemStack);
+  public default boolean m_271862_(net.minecraft.world.Container, int, net.minecraft.world.item.ItemStack);
+  public default int m_18947_(net.minecraft.world.item.Item);
+  public default boolean m_18949_(java.util.Set<net.minecraft.world.item.Item>);
+  public default boolean m_216874_(java.util.function.Predicate<net.minecraft.world.item.ItemStack>);
+  public static boolean m_272074_(net.minecraft.world.level.block.entity.BlockEntity, net.minecraft.world.entity.player.Player);
+  public static boolean m_271806_(net.minecraft.world.level.block.entity.BlockEntity, net.minecraft.world.entity.player.Player, int);
+  private static boolean m_216871_(java.util.Set, net.minecraft.world.item.ItemStack);
+}

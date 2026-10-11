@@ -1,0 +1,272 @@
+Compiled from "EntityDataSerializers.java"
+public class net.minecraft.network.syncher.EntityDataSerializers {
+  private static final net.minecraft.util.CrudeIncrementalIntIdentityHashBiMap<net.minecraft.network.syncher.EntityDataSerializer<?>> f_135046_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.lang.Byte> f_135027_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.lang.Integer> f_135028_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.lang.Long> f_244073_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.lang.Float> f_135029_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.lang.String> f_135030_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.network.chat.Component> f_135031_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.util.Optional<net.minecraft.network.chat.Component>> f_135032_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.item.ItemStack> f_135033_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.level.block.state.BlockState> f_135034_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.util.Optional<net.minecraft.world.level.block.state.BlockState>> f_268618_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.lang.Boolean> f_135035_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.core.particles.ParticleOptions> f_135036_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.core.Rotations> f_135037_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.core.BlockPos> f_135038_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.util.Optional<net.minecraft.core.BlockPos>> f_135039_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.core.Direction> f_135040_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.util.Optional<java.util.UUID>> f_135041_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.util.Optional<net.minecraft.core.GlobalPos>> f_238113_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.nbt.CompoundTag> f_135042_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.entity.npc.VillagerData> f_135043_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<java.util.OptionalInt> f_135044_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.entity.Pose> f_135045_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.entity.animal.CatVariant> f_238114_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.entity.animal.FrogVariant> f_238115_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.core.Holder<net.minecraft.world.entity.decoration.PaintingVariant>> f_238116_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<net.minecraft.world.entity.animal.sniffer.Sniffer$State> f_271344_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<org.joml.Vector3f> f_268676_;
+
+  public static final net.minecraft.network.syncher.EntityDataSerializer<org.joml.Quaternionf> f_268624_;
+
+  public static void m_135050_(net.minecraft.network.syncher.EntityDataSerializer<?>);
+    Code:
+       0: getstatic     #102                // Field f_135046_:Lnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;
+       3: aload_0
+       4: invokevirtual #108                // Method net/minecraft/util/CrudeIncrementalIntIdentityHashBiMap.m_13569_:(Ljava/lang/Object;)I
+       7: sipush        256
+      10: if_icmplt     23
+      13: new           #110                // class java/lang/RuntimeException
+      16: dup
+      17: ldc           #112                // String Vanilla DataSerializer ID limit exceeded
+      19: invokespecial #116                // Method java/lang/RuntimeException."<init>":(Ljava/lang/String;)V
+      22: athrow
+      23: return
+
+  public static net.minecraft.network.syncher.EntityDataSerializer<?> m_135048_(int);
+    Code:
+       0: iload_0
+       1: getstatic     #102                // Field f_135046_:Lnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;
+       4: invokestatic  #128                // Method net/minecraftforge/common/ForgeHooks.getSerializer:(ILnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+       7: areturn
+
+  public static int m_135052_(net.minecraft.network.syncher.EntityDataSerializer<?>);
+    Code:
+       0: aload_0
+       1: getstatic     #102                // Field f_135046_:Lnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;
+       4: invokestatic  #137                // Method net/minecraftforge/common/ForgeHooks.getSerializerId:(Lnet/minecraft/network/syncher/EntityDataSerializer;Lnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;)I
+       7: ireturn
+
+  private net.minecraft.network.syncher.EntityDataSerializers();
+    Code:
+       0: aload_0
+       1: invokespecial #141                // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static void m_238117_(net.minecraft.network.FriendlyByteBuf, java.lang.Byte);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #151                // Method java/lang/Byte.byteValue:()B
+       5: invokevirtual #155                // Method net/minecraft/network/FriendlyByteBuf.writeByte:(I)Lio/netty/buffer/ByteBuf;
+       8: pop
+       9: return
+
+  static {};
+    Code:
+       0: bipush        16
+       2: invokestatic  #164                // Method net/minecraft/util/CrudeIncrementalIntIdentityHashBiMap.m_184237_:(I)Lnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;
+       5: putstatic     #102                // Field f_135046_:Lnet/minecraft/util/CrudeIncrementalIntIdentityHashBiMap;
+       8: invokedynamic #181,  0            // InvokeDynamic #0:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+      13: invokedynamic #193,  0            // InvokeDynamic #1:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+      18: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      21: putstatic     #201                // Field f_135027_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      24: invokedynamic #209,  0            // InvokeDynamic #2:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+      29: invokedynamic #217,  0            // InvokeDynamic #3:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+      34: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      37: putstatic     #219                // Field f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      40: invokedynamic #227,  0            // InvokeDynamic #4:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+      45: invokedynamic #235,  0            // InvokeDynamic #5:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+      50: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      53: putstatic     #237                // Field f_244073_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      56: invokedynamic #245,  0            // InvokeDynamic #6:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+      61: invokedynamic #253,  0            // InvokeDynamic #7:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+      66: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      69: putstatic     #255                // Field f_135029_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      72: invokedynamic #263,  0            // InvokeDynamic #8:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+      77: invokedynamic #271,  0            // InvokeDynamic #9:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+      82: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+      85: putstatic     #273                // Field f_135030_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+      88: invokedynamic #281,  0            // InvokeDynamic #10:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+      93: invokedynamic #289,  0            // InvokeDynamic #11:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+      98: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     101: putstatic     #291                // Field f_135031_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     104: invokedynamic #281,  0            // InvokeDynamic #10:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     109: invokedynamic #289,  0            // InvokeDynamic #11:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     114: invokestatic  #294                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238098_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     117: putstatic     #296                // Field f_135032_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     120: new           #19                 // class net/minecraft/network/syncher/EntityDataSerializers$1
+     123: dup
+     124: invokespecial #297                // Method net/minecraft/network/syncher/EntityDataSerializers$1."<init>":()V
+     127: putstatic     #299                // Field f_135033_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     130: getstatic     #305                // Field net/minecraft/world/level/block/Block.f_49791_:Lnet/minecraft/core/IdMapper;
+     133: invokestatic  #309                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238081_:(Lnet/minecraft/core/IdMap;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     136: putstatic     #311                // Field f_135034_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     139: new           #17                 // class net/minecraft/network/syncher/EntityDataSerializers$2
+     142: dup
+     143: invokespecial #312                // Method net/minecraft/network/syncher/EntityDataSerializers$2."<init>":()V
+     146: putstatic     #314                // Field f_268618_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     149: invokedynamic #322,  0            // InvokeDynamic #12:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     154: invokedynamic #330,  0            // InvokeDynamic #13:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     159: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     162: putstatic     #332                // Field f_135035_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     165: new           #15                 // class net/minecraft/network/syncher/EntityDataSerializers$3
+     168: dup
+     169: invokespecial #333                // Method net/minecraft/network/syncher/EntityDataSerializers$3."<init>":()V
+     172: putstatic     #335                // Field f_135036_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     175: new           #13                 // class net/minecraft/network/syncher/EntityDataSerializers$4
+     178: dup
+     179: invokespecial #336                // Method net/minecraft/network/syncher/EntityDataSerializers$4."<init>":()V
+     182: putstatic     #338                // Field f_135037_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     185: invokedynamic #346,  0            // InvokeDynamic #14:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     190: invokedynamic #354,  0            // InvokeDynamic #15:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     195: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     198: putstatic     #356                // Field f_135038_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     201: invokedynamic #346,  0            // InvokeDynamic #14:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     206: invokedynamic #354,  0            // InvokeDynamic #15:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     211: invokestatic  #294                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238098_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     214: putstatic     #358                // Field f_135039_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     217: ldc_w         #360                // class net/minecraft/core/Direction
+     220: invokestatic  #364                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238090_:(Ljava/lang/Class;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     223: putstatic     #366                // Field f_135040_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     226: invokedynamic #374,  0            // InvokeDynamic #16:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     231: invokedynamic #382,  0            // InvokeDynamic #17:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     236: invokestatic  #294                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238098_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     239: putstatic     #384                // Field f_135041_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     242: invokedynamic #392,  0            // InvokeDynamic #18:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     247: invokedynamic #400,  0            // InvokeDynamic #19:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     252: invokestatic  #294                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238098_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     255: putstatic     #402                // Field f_238113_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     258: new           #11                 // class net/minecraft/network/syncher/EntityDataSerializers$5
+     261: dup
+     262: invokespecial #403                // Method net/minecraft/network/syncher/EntityDataSerializers$5."<init>":()V
+     265: putstatic     #405                // Field f_135042_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     268: new           #9                  // class net/minecraft/network/syncher/EntityDataSerializers$6
+     271: dup
+     272: invokespecial #406                // Method net/minecraft/network/syncher/EntityDataSerializers$6."<init>":()V
+     275: putstatic     #408                // Field f_135043_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     278: new           #7                  // class net/minecraft/network/syncher/EntityDataSerializers$7
+     281: dup
+     282: invokespecial #409                // Method net/minecraft/network/syncher/EntityDataSerializers$7."<init>":()V
+     285: putstatic     #411                // Field f_135044_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     288: ldc_w         #413                // class net/minecraft/world/entity/Pose
+     291: invokestatic  #364                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238090_:(Ljava/lang/Class;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     294: putstatic     #415                // Field f_135045_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     297: getstatic     #421                // Field net/minecraft/core/registries/BuiltInRegistries.f_256754_:Lnet/minecraft/core/Registry;
+     300: invokestatic  #309                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238081_:(Lnet/minecraft/core/IdMap;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     303: putstatic     #423                // Field f_238114_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     306: getstatic     #426                // Field net/minecraft/core/registries/BuiltInRegistries.f_256770_:Lnet/minecraft/core/Registry;
+     309: invokestatic  #309                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238081_:(Lnet/minecraft/core/IdMap;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     312: putstatic     #428                // Field f_238115_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     315: getstatic     #432                // Field net/minecraft/core/registries/BuiltInRegistries.f_257051_:Lnet/minecraft/core/DefaultedRegistry;
+     318: invokeinterface #438,  1          // InterfaceMethod net/minecraft/core/DefaultedRegistry.m_206115_:()Lnet/minecraft/core/IdMap;
+     323: invokestatic  #309                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238081_:(Lnet/minecraft/core/IdMap;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     326: putstatic     #440                // Field f_238116_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     329: ldc           #29                 // class net/minecraft/world/entity/animal/sniffer/Sniffer$State
+     331: invokestatic  #364                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238090_:(Ljava/lang/Class;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     334: putstatic     #442                // Field f_271344_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     337: invokedynamic #450,  0            // InvokeDynamic #20:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     342: invokedynamic #458,  0            // InvokeDynamic #21:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     347: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     350: putstatic     #460                // Field f_268676_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     353: invokedynamic #468,  0            // InvokeDynamic #22:accept:()Lnet/minecraft/network/FriendlyByteBuf$Writer;
+     358: invokedynamic #476,  0            // InvokeDynamic #23:apply:()Lnet/minecraft/network/FriendlyByteBuf$Reader;
+     363: invokestatic  #199                // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_238095_:(Lnet/minecraft/network/FriendlyByteBuf$Writer;Lnet/minecraft/network/FriendlyByteBuf$Reader;)Lnet/minecraft/network/syncher/EntityDataSerializer;
+     366: putstatic     #478                // Field f_268624_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     369: getstatic     #201                // Field f_135027_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     372: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     375: getstatic     #219                // Field f_135028_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     378: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     381: getstatic     #237                // Field f_244073_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     384: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     387: getstatic     #255                // Field f_135029_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     390: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     393: getstatic     #273                // Field f_135030_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     396: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     399: getstatic     #291                // Field f_135031_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     402: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     405: getstatic     #296                // Field f_135032_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     408: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     411: getstatic     #299                // Field f_135033_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     414: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     417: getstatic     #332                // Field f_135035_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     420: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     423: getstatic     #338                // Field f_135037_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     426: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     429: getstatic     #356                // Field f_135038_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     432: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     435: getstatic     #358                // Field f_135039_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     438: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     441: getstatic     #366                // Field f_135040_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     444: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     447: getstatic     #384                // Field f_135041_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     450: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     453: getstatic     #311                // Field f_135034_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     456: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     459: getstatic     #314                // Field f_268618_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     462: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     465: getstatic     #405                // Field f_135042_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     468: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     471: getstatic     #335                // Field f_135036_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     474: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     477: getstatic     #408                // Field f_135043_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     480: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     483: getstatic     #411                // Field f_135044_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     486: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     489: getstatic     #415                // Field f_135045_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     492: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     495: getstatic     #423                // Field f_238114_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     498: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     501: getstatic     #428                // Field f_238115_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     504: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     507: getstatic     #402                // Field f_238113_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     510: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     513: getstatic     #440                // Field f_238116_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     516: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     519: getstatic     #442                // Field f_271344_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     522: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     525: getstatic     #460                // Field f_268676_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     528: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     531: getstatic     #478                // Field f_268624_:Lnet/minecraft/network/syncher/EntityDataSerializer;
+     534: invokestatic  #480                // Method m_135050_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)V
+     537: return
+}

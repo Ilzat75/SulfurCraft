@@ -1,0 +1,660 @@
+Compiled from "ParticleTypes.java"
+public class net.minecraft.core.particles.ParticleTypes {
+  public static final net.minecraft.core.particles.SimpleParticleType f_123770_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123792_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.BlockParticleOption> f_123794_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.BlockParticleOption> f_194652_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123795_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123796_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123797_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123798_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123799_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123800_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123801_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123802_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123803_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123804_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.DustParticleOptions> f_123805_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.DustColorTransitionOptions> f_175836_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123806_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123807_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123808_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123809_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123810_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123811_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123812_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123813_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_235902_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.BlockParticleOption> f_123814_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123815_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123816_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123744_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_276452_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_235898_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.SculkChargeParticleOptions> f_235899_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_235900_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123745_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123746_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123747_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123748_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123749_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123750_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123751_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.ItemParticleOption> f_123752_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.VibrationParticleOption> f_175820_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123753_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123754_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123755_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123756_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123757_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123758_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123759_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123760_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123761_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123762_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123763_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123764_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123765_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123766_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123767_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123768_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123769_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123771_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123772_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123773_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123774_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123775_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123776_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123777_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123778_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123779_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123780_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123781_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123782_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175832_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123783_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123784_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123785_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175833_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123786_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123787_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123788_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123789_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_123790_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175834_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175821_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175822_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175823_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175824_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175825_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175826_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175827_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175828_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175829_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175830_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_175831_;
+
+  public static final net.minecraft.core.particles.ParticleType<net.minecraft.core.particles.ShriekParticleOption> f_235901_;
+
+  public static final net.minecraft.core.particles.SimpleParticleType f_276512_;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.core.particles.ParticleOptions> f_123791_;
+
+  public net.minecraft.core.particles.ParticleTypes();
+    Code:
+       0: aload_0
+       1: invokespecial #128                // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static net.minecraft.core.particles.SimpleParticleType m_123824_(java.lang.String, boolean);
+    Code:
+       0: getstatic     #138                // Field net/minecraft/core/registries/BuiltInRegistries.f_257034_:Lnet/minecraft/core/Registry;
+       3: aload_0
+       4: new           #140                // class net/minecraft/core/particles/SimpleParticleType
+       7: dup
+       8: iload_1
+       9: invokespecial #143                // Method net/minecraft/core/particles/SimpleParticleType."<init>":(Z)V
+      12: invokestatic  #149                // InterfaceMethod net/minecraft/core/Registry.m_122961_:(Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+      15: checkcast     #140                // class net/minecraft/core/particles/SimpleParticleType
+      18: areturn
+
+  private static <T extends net.minecraft.core.particles.ParticleOptions> net.minecraft.core.particles.ParticleType<T> m_235905_(java.lang.String, boolean, net.minecraft.core.particles.ParticleOptions$Deserializer<T>, java.util.function.Function<net.minecraft.core.particles.ParticleType<T>, com.mojang.serialization.Codec<T>>);
+    Code:
+       0: getstatic     #138                // Field net/minecraft/core/registries/BuiltInRegistries.f_257034_:Lnet/minecraft/core/Registry;
+       3: aload_0
+       4: new           #7                  // class net/minecraft/core/particles/ParticleTypes$1
+       7: dup
+       8: iload_1
+       9: aload_2
+      10: aload_3
+      11: invokespecial #159                // Method net/minecraft/core/particles/ParticleTypes$1."<init>":(ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)V
+      14: invokestatic  #149                // InterfaceMethod net/minecraft/core/Registry.m_122961_:(Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+      17: checkcast     #161                // class net/minecraft/core/particles/ParticleType
+      20: areturn
+
+  private static com.mojang.serialization.Codec m_235903_(net.minecraft.core.particles.ParticleType);
+    Code:
+       0: getstatic     #176                // Field net/minecraft/core/particles/ShriekParticleOption.f_235944_:Lcom/mojang/serialization/Codec;
+       3: areturn
+
+  private static com.mojang.serialization.Codec m_235910_(net.minecraft.core.particles.ParticleType);
+    Code:
+       0: getstatic     #183                // Field net/minecraft/core/particles/VibrationParticleOption.f_175842_:Lcom/mojang/serialization/Codec;
+       3: areturn
+
+  private static com.mojang.serialization.Codec m_175838_(net.minecraft.core.particles.ParticleType);
+    Code:
+       0: getstatic     #190                // Field net/minecraft/core/particles/SculkChargeParticleOptions.f_235912_:Lcom/mojang/serialization/Codec;
+       3: areturn
+
+  private static com.mojang.serialization.Codec m_175840_(net.minecraft.core.particles.ParticleType);
+    Code:
+       0: getstatic     #197                // Field net/minecraft/core/particles/DustColorTransitionOptions.f_175753_:Lcom/mojang/serialization/Codec;
+       3: areturn
+
+  private static com.mojang.serialization.Codec m_123818_(net.minecraft.core.particles.ParticleType);
+    Code:
+       0: getstatic     #204                // Field net/minecraft/core/particles/DustParticleOptions.f_123657_:Lcom/mojang/serialization/Codec;
+       3: areturn
+
+  static {};
+    Code:
+       0: ldc           #208                // String ambient_entity_effect
+       2: iconst_0
+       3: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+       6: putstatic     #212                // Field f_123770_:Lnet/minecraft/core/particles/SimpleParticleType;
+       9: ldc           #214                // String angry_villager
+      11: iconst_0
+      12: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+      15: putstatic     #216                // Field f_123792_:Lnet/minecraft/core/particles/SimpleParticleType;
+      18: ldc           #218                // String block
+      20: iconst_0
+      21: getstatic     #223                // Field net/minecraft/core/particles/BlockParticleOption.f_123624_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+      24: invokedynamic #241,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      29: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+      32: putstatic     #245                // Field f_123794_:Lnet/minecraft/core/particles/ParticleType;
+      35: ldc           #247                // String block_marker
+      37: iconst_0
+      38: getstatic     #223                // Field net/minecraft/core/particles/BlockParticleOption.f_123624_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+      41: invokedynamic #241,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      46: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+      49: putstatic     #249                // Field f_194652_:Lnet/minecraft/core/particles/ParticleType;
+      52: ldc           #251                // String bubble
+      54: iconst_0
+      55: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+      58: putstatic     #253                // Field f_123795_:Lnet/minecraft/core/particles/SimpleParticleType;
+      61: ldc           #255                // String cloud
+      63: iconst_0
+      64: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+      67: putstatic     #257                // Field f_123796_:Lnet/minecraft/core/particles/SimpleParticleType;
+      70: ldc_w         #259                // String crit
+      73: iconst_0
+      74: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+      77: putstatic     #261                // Field f_123797_:Lnet/minecraft/core/particles/SimpleParticleType;
+      80: ldc_w         #263                // String damage_indicator
+      83: iconst_1
+      84: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+      87: putstatic     #265                // Field f_123798_:Lnet/minecraft/core/particles/SimpleParticleType;
+      90: ldc_w         #267                // String dragon_breath
+      93: iconst_0
+      94: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+      97: putstatic     #269                // Field f_123799_:Lnet/minecraft/core/particles/SimpleParticleType;
+     100: ldc_w         #271                // String dripping_lava
+     103: iconst_0
+     104: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     107: putstatic     #273                // Field f_123800_:Lnet/minecraft/core/particles/SimpleParticleType;
+     110: ldc_w         #275                // String falling_lava
+     113: iconst_0
+     114: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     117: putstatic     #277                // Field f_123801_:Lnet/minecraft/core/particles/SimpleParticleType;
+     120: ldc_w         #279                // String landing_lava
+     123: iconst_0
+     124: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     127: putstatic     #281                // Field f_123802_:Lnet/minecraft/core/particles/SimpleParticleType;
+     130: ldc_w         #283                // String dripping_water
+     133: iconst_0
+     134: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     137: putstatic     #285                // Field f_123803_:Lnet/minecraft/core/particles/SimpleParticleType;
+     140: ldc_w         #287                // String falling_water
+     143: iconst_0
+     144: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     147: putstatic     #289                // Field f_123804_:Lnet/minecraft/core/particles/SimpleParticleType;
+     150: ldc_w         #291                // String dust
+     153: iconst_0
+     154: getstatic     #294                // Field net/minecraft/core/particles/DustParticleOptions.f_123658_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     157: invokedynamic #298,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+     162: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+     165: putstatic     #300                // Field f_123805_:Lnet/minecraft/core/particles/ParticleType;
+     168: ldc_w         #302                // String dust_color_transition
+     171: iconst_0
+     172: getstatic     #305                // Field net/minecraft/core/particles/DustColorTransitionOptions.f_175754_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     175: invokedynamic #309,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+     180: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+     183: putstatic     #311                // Field f_175836_:Lnet/minecraft/core/particles/ParticleType;
+     186: ldc_w         #313                // String effect
+     189: iconst_0
+     190: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     193: putstatic     #315                // Field f_123806_:Lnet/minecraft/core/particles/SimpleParticleType;
+     196: ldc_w         #317                // String elder_guardian
+     199: iconst_1
+     200: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     203: putstatic     #319                // Field f_123807_:Lnet/minecraft/core/particles/SimpleParticleType;
+     206: ldc_w         #321                // String enchanted_hit
+     209: iconst_0
+     210: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     213: putstatic     #323                // Field f_123808_:Lnet/minecraft/core/particles/SimpleParticleType;
+     216: ldc_w         #325                // String enchant
+     219: iconst_0
+     220: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     223: putstatic     #327                // Field f_123809_:Lnet/minecraft/core/particles/SimpleParticleType;
+     226: ldc_w         #329                // String end_rod
+     229: iconst_0
+     230: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     233: putstatic     #331                // Field f_123810_:Lnet/minecraft/core/particles/SimpleParticleType;
+     236: ldc_w         #333                // String entity_effect
+     239: iconst_0
+     240: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     243: putstatic     #335                // Field f_123811_:Lnet/minecraft/core/particles/SimpleParticleType;
+     246: ldc_w         #337                // String explosion_emitter
+     249: iconst_1
+     250: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     253: putstatic     #339                // Field f_123812_:Lnet/minecraft/core/particles/SimpleParticleType;
+     256: ldc_w         #341                // String explosion
+     259: iconst_1
+     260: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     263: putstatic     #343                // Field f_123813_:Lnet/minecraft/core/particles/SimpleParticleType;
+     266: ldc_w         #345                // String sonic_boom
+     269: iconst_1
+     270: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     273: putstatic     #347                // Field f_235902_:Lnet/minecraft/core/particles/SimpleParticleType;
+     276: ldc_w         #349                // String falling_dust
+     279: iconst_0
+     280: getstatic     #223                // Field net/minecraft/core/particles/BlockParticleOption.f_123624_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     283: invokedynamic #241,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+     288: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+     291: putstatic     #351                // Field f_123814_:Lnet/minecraft/core/particles/ParticleType;
+     294: ldc_w         #353                // String firework
+     297: iconst_0
+     298: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     301: putstatic     #355                // Field f_123815_:Lnet/minecraft/core/particles/SimpleParticleType;
+     304: ldc_w         #357                // String fishing
+     307: iconst_0
+     308: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     311: putstatic     #359                // Field f_123816_:Lnet/minecraft/core/particles/SimpleParticleType;
+     314: ldc_w         #361                // String flame
+     317: iconst_0
+     318: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     321: putstatic     #363                // Field f_123744_:Lnet/minecraft/core/particles/SimpleParticleType;
+     324: ldc_w         #365                // String cherry_leaves
+     327: iconst_0
+     328: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     331: putstatic     #367                // Field f_276452_:Lnet/minecraft/core/particles/SimpleParticleType;
+     334: ldc_w         #369                // String sculk_soul
+     337: iconst_0
+     338: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     341: putstatic     #371                // Field f_235898_:Lnet/minecraft/core/particles/SimpleParticleType;
+     344: ldc_w         #373                // String sculk_charge
+     347: iconst_1
+     348: getstatic     #376                // Field net/minecraft/core/particles/SculkChargeParticleOptions.f_235913_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     351: invokedynamic #380,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+     356: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+     359: putstatic     #382                // Field f_235899_:Lnet/minecraft/core/particles/ParticleType;
+     362: ldc_w         #384                // String sculk_charge_pop
+     365: iconst_1
+     366: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     369: putstatic     #386                // Field f_235900_:Lnet/minecraft/core/particles/SimpleParticleType;
+     372: ldc_w         #388                // String soul_fire_flame
+     375: iconst_0
+     376: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     379: putstatic     #390                // Field f_123745_:Lnet/minecraft/core/particles/SimpleParticleType;
+     382: ldc_w         #392                // String soul
+     385: iconst_0
+     386: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     389: putstatic     #394                // Field f_123746_:Lnet/minecraft/core/particles/SimpleParticleType;
+     392: ldc_w         #396                // String flash
+     395: iconst_0
+     396: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     399: putstatic     #398                // Field f_123747_:Lnet/minecraft/core/particles/SimpleParticleType;
+     402: ldc_w         #400                // String happy_villager
+     405: iconst_0
+     406: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     409: putstatic     #402                // Field f_123748_:Lnet/minecraft/core/particles/SimpleParticleType;
+     412: ldc_w         #404                // String composter
+     415: iconst_0
+     416: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     419: putstatic     #406                // Field f_123749_:Lnet/minecraft/core/particles/SimpleParticleType;
+     422: ldc_w         #408                // String heart
+     425: iconst_0
+     426: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     429: putstatic     #410                // Field f_123750_:Lnet/minecraft/core/particles/SimpleParticleType;
+     432: ldc_w         #412                // String instant_effect
+     435: iconst_0
+     436: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     439: putstatic     #414                // Field f_123751_:Lnet/minecraft/core/particles/SimpleParticleType;
+     442: ldc_w         #416                // String item
+     445: iconst_0
+     446: getstatic     #421                // Field net/minecraft/core/particles/ItemParticleOption.f_123700_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     449: invokedynamic #426,  0            // InvokeDynamic #4:apply:()Ljava/util/function/Function;
+     454: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+     457: putstatic     #428                // Field f_123752_:Lnet/minecraft/core/particles/ParticleType;
+     460: ldc_w         #430                // String vibration
+     463: iconst_1
+     464: getstatic     #433                // Field net/minecraft/core/particles/VibrationParticleOption.f_175843_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     467: invokedynamic #437,  0            // InvokeDynamic #5:apply:()Ljava/util/function/Function;
+     472: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+     475: putstatic     #439                // Field f_175820_:Lnet/minecraft/core/particles/ParticleType;
+     478: ldc_w         #441                // String item_slime
+     481: iconst_0
+     482: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     485: putstatic     #443                // Field f_123753_:Lnet/minecraft/core/particles/SimpleParticleType;
+     488: ldc_w         #445                // String item_snowball
+     491: iconst_0
+     492: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     495: putstatic     #447                // Field f_123754_:Lnet/minecraft/core/particles/SimpleParticleType;
+     498: ldc_w         #449                // String large_smoke
+     501: iconst_0
+     502: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     505: putstatic     #451                // Field f_123755_:Lnet/minecraft/core/particles/SimpleParticleType;
+     508: ldc_w         #453                // String lava
+     511: iconst_0
+     512: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     515: putstatic     #455                // Field f_123756_:Lnet/minecraft/core/particles/SimpleParticleType;
+     518: ldc_w         #457                // String mycelium
+     521: iconst_0
+     522: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     525: putstatic     #459                // Field f_123757_:Lnet/minecraft/core/particles/SimpleParticleType;
+     528: ldc_w         #461                // String note
+     531: iconst_0
+     532: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     535: putstatic     #463                // Field f_123758_:Lnet/minecraft/core/particles/SimpleParticleType;
+     538: ldc_w         #465                // String poof
+     541: iconst_1
+     542: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     545: putstatic     #467                // Field f_123759_:Lnet/minecraft/core/particles/SimpleParticleType;
+     548: ldc_w         #469                // String portal
+     551: iconst_0
+     552: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     555: putstatic     #471                // Field f_123760_:Lnet/minecraft/core/particles/SimpleParticleType;
+     558: ldc_w         #473                // String rain
+     561: iconst_0
+     562: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     565: putstatic     #475                // Field f_123761_:Lnet/minecraft/core/particles/SimpleParticleType;
+     568: ldc_w         #477                // String smoke
+     571: iconst_0
+     572: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     575: putstatic     #479                // Field f_123762_:Lnet/minecraft/core/particles/SimpleParticleType;
+     578: ldc_w         #481                // String sneeze
+     581: iconst_0
+     582: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     585: putstatic     #483                // Field f_123763_:Lnet/minecraft/core/particles/SimpleParticleType;
+     588: ldc_w         #485                // String spit
+     591: iconst_1
+     592: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     595: putstatic     #487                // Field f_123764_:Lnet/minecraft/core/particles/SimpleParticleType;
+     598: ldc_w         #489                // String squid_ink
+     601: iconst_1
+     602: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     605: putstatic     #491                // Field f_123765_:Lnet/minecraft/core/particles/SimpleParticleType;
+     608: ldc_w         #493                // String sweep_attack
+     611: iconst_1
+     612: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     615: putstatic     #495                // Field f_123766_:Lnet/minecraft/core/particles/SimpleParticleType;
+     618: ldc_w         #497                // String totem_of_undying
+     621: iconst_0
+     622: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     625: putstatic     #499                // Field f_123767_:Lnet/minecraft/core/particles/SimpleParticleType;
+     628: ldc_w         #501                // String underwater
+     631: iconst_0
+     632: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     635: putstatic     #503                // Field f_123768_:Lnet/minecraft/core/particles/SimpleParticleType;
+     638: ldc_w         #505                // String splash
+     641: iconst_0
+     642: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     645: putstatic     #507                // Field f_123769_:Lnet/minecraft/core/particles/SimpleParticleType;
+     648: ldc_w         #509                // String witch
+     651: iconst_0
+     652: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     655: putstatic     #511                // Field f_123771_:Lnet/minecraft/core/particles/SimpleParticleType;
+     658: ldc_w         #513                // String bubble_pop
+     661: iconst_0
+     662: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     665: putstatic     #515                // Field f_123772_:Lnet/minecraft/core/particles/SimpleParticleType;
+     668: ldc_w         #517                // String current_down
+     671: iconst_0
+     672: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     675: putstatic     #519                // Field f_123773_:Lnet/minecraft/core/particles/SimpleParticleType;
+     678: ldc_w         #521                // String bubble_column_up
+     681: iconst_0
+     682: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     685: putstatic     #523                // Field f_123774_:Lnet/minecraft/core/particles/SimpleParticleType;
+     688: ldc_w         #525                // String nautilus
+     691: iconst_0
+     692: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     695: putstatic     #527                // Field f_123775_:Lnet/minecraft/core/particles/SimpleParticleType;
+     698: ldc_w         #529                // String dolphin
+     701: iconst_0
+     702: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     705: putstatic     #531                // Field f_123776_:Lnet/minecraft/core/particles/SimpleParticleType;
+     708: ldc_w         #533                // String campfire_cosy_smoke
+     711: iconst_1
+     712: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     715: putstatic     #535                // Field f_123777_:Lnet/minecraft/core/particles/SimpleParticleType;
+     718: ldc_w         #537                // String campfire_signal_smoke
+     721: iconst_1
+     722: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     725: putstatic     #539                // Field f_123778_:Lnet/minecraft/core/particles/SimpleParticleType;
+     728: ldc_w         #541                // String dripping_honey
+     731: iconst_0
+     732: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     735: putstatic     #543                // Field f_123779_:Lnet/minecraft/core/particles/SimpleParticleType;
+     738: ldc_w         #545                // String falling_honey
+     741: iconst_0
+     742: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     745: putstatic     #547                // Field f_123780_:Lnet/minecraft/core/particles/SimpleParticleType;
+     748: ldc_w         #549                // String landing_honey
+     751: iconst_0
+     752: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     755: putstatic     #551                // Field f_123781_:Lnet/minecraft/core/particles/SimpleParticleType;
+     758: ldc_w         #553                // String falling_nectar
+     761: iconst_0
+     762: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     765: putstatic     #555                // Field f_123782_:Lnet/minecraft/core/particles/SimpleParticleType;
+     768: ldc_w         #557                // String falling_spore_blossom
+     771: iconst_0
+     772: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     775: putstatic     #559                // Field f_175832_:Lnet/minecraft/core/particles/SimpleParticleType;
+     778: ldc_w         #561                // String ash
+     781: iconst_0
+     782: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     785: putstatic     #563                // Field f_123783_:Lnet/minecraft/core/particles/SimpleParticleType;
+     788: ldc_w         #565                // String crimson_spore
+     791: iconst_0
+     792: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     795: putstatic     #567                // Field f_123784_:Lnet/minecraft/core/particles/SimpleParticleType;
+     798: ldc_w         #569                // String warped_spore
+     801: iconst_0
+     802: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     805: putstatic     #571                // Field f_123785_:Lnet/minecraft/core/particles/SimpleParticleType;
+     808: ldc_w         #573                // String spore_blossom_air
+     811: iconst_0
+     812: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     815: putstatic     #575                // Field f_175833_:Lnet/minecraft/core/particles/SimpleParticleType;
+     818: ldc_w         #577                // String dripping_obsidian_tear
+     821: iconst_0
+     822: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     825: putstatic     #579                // Field f_123786_:Lnet/minecraft/core/particles/SimpleParticleType;
+     828: ldc_w         #581                // String falling_obsidian_tear
+     831: iconst_0
+     832: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     835: putstatic     #583                // Field f_123787_:Lnet/minecraft/core/particles/SimpleParticleType;
+     838: ldc_w         #585                // String landing_obsidian_tear
+     841: iconst_0
+     842: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     845: putstatic     #587                // Field f_123788_:Lnet/minecraft/core/particles/SimpleParticleType;
+     848: ldc_w         #589                // String reverse_portal
+     851: iconst_0
+     852: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     855: putstatic     #591                // Field f_123789_:Lnet/minecraft/core/particles/SimpleParticleType;
+     858: ldc_w         #593                // String white_ash
+     861: iconst_0
+     862: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     865: putstatic     #595                // Field f_123790_:Lnet/minecraft/core/particles/SimpleParticleType;
+     868: ldc_w         #597                // String small_flame
+     871: iconst_0
+     872: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     875: putstatic     #599                // Field f_175834_:Lnet/minecraft/core/particles/SimpleParticleType;
+     878: ldc_w         #601                // String snowflake
+     881: iconst_0
+     882: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     885: putstatic     #603                // Field f_175821_:Lnet/minecraft/core/particles/SimpleParticleType;
+     888: ldc_w         #605                // String dripping_dripstone_lava
+     891: iconst_0
+     892: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     895: putstatic     #607                // Field f_175822_:Lnet/minecraft/core/particles/SimpleParticleType;
+     898: ldc_w         #609                // String falling_dripstone_lava
+     901: iconst_0
+     902: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     905: putstatic     #611                // Field f_175823_:Lnet/minecraft/core/particles/SimpleParticleType;
+     908: ldc_w         #613                // String dripping_dripstone_water
+     911: iconst_0
+     912: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     915: putstatic     #615                // Field f_175824_:Lnet/minecraft/core/particles/SimpleParticleType;
+     918: ldc_w         #617                // String falling_dripstone_water
+     921: iconst_0
+     922: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     925: putstatic     #619                // Field f_175825_:Lnet/minecraft/core/particles/SimpleParticleType;
+     928: ldc_w         #621                // String glow_squid_ink
+     931: iconst_1
+     932: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     935: putstatic     #623                // Field f_175826_:Lnet/minecraft/core/particles/SimpleParticleType;
+     938: ldc_w         #625                // String glow
+     941: iconst_1
+     942: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     945: putstatic     #627                // Field f_175827_:Lnet/minecraft/core/particles/SimpleParticleType;
+     948: ldc_w         #629                // String wax_on
+     951: iconst_1
+     952: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     955: putstatic     #631                // Field f_175828_:Lnet/minecraft/core/particles/SimpleParticleType;
+     958: ldc_w         #633                // String wax_off
+     961: iconst_1
+     962: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     965: putstatic     #635                // Field f_175829_:Lnet/minecraft/core/particles/SimpleParticleType;
+     968: ldc_w         #637                // String electric_spark
+     971: iconst_1
+     972: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     975: putstatic     #639                // Field f_175830_:Lnet/minecraft/core/particles/SimpleParticleType;
+     978: ldc_w         #641                // String scrape
+     981: iconst_1
+     982: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+     985: putstatic     #643                // Field f_175831_:Lnet/minecraft/core/particles/SimpleParticleType;
+     988: ldc_w         #645                // String shriek
+     991: iconst_0
+     992: getstatic     #648                // Field net/minecraft/core/particles/ShriekParticleOption.f_235945_:Lnet/minecraft/core/particles/ParticleOptions$Deserializer;
+     995: invokedynamic #652,  0            // InvokeDynamic #6:apply:()Ljava/util/function/Function;
+    1000: invokestatic  #243                // Method m_235905_:(Ljava/lang/String;ZLnet/minecraft/core/particles/ParticleOptions$Deserializer;Ljava/util/function/Function;)Lnet/minecraft/core/particles/ParticleType;
+    1003: putstatic     #654                // Field f_235901_:Lnet/minecraft/core/particles/ParticleType;
+    1006: ldc_w         #656                // String egg_crack
+    1009: iconst_0
+    1010: invokestatic  #210                // Method m_123824_:(Ljava/lang/String;Z)Lnet/minecraft/core/particles/SimpleParticleType;
+    1013: putstatic     #658                // Field f_276512_:Lnet/minecraft/core/particles/SimpleParticleType;
+    1016: getstatic     #138                // Field net/minecraft/core/registries/BuiltInRegistries.f_257034_:Lnet/minecraft/core/Registry;
+    1019: invokeinterface #662,  1          // InterfaceMethod net/minecraft/core/Registry.m_194605_:()Lcom/mojang/serialization/Codec;
+    1024: ldc_w         #664                // String type
+    1027: invokedynamic #672,  0            // InvokeDynamic #7:apply:()Ljava/util/function/Function;
+    1032: invokedynamic #677,  0            // InvokeDynamic #8:apply:()Ljava/util/function/Function;
+    1037: invokeinterface #683,  4          // InterfaceMethod com/mojang/serialization/Codec.dispatch:(Ljava/lang/String;Ljava/util/function/Function;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+    1042: putstatic     #685                // Field f_123791_:Lcom/mojang/serialization/Codec;
+    1045: return
+}

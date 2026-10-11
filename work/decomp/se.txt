@@ -1,0 +1,22 @@
+﻿Compiled from "SoundEvent.java"
+public class net.minecraft.sounds.SoundEvent {
+  public static final com.mojang.serialization.Codec<net.minecraft.sounds.SoundEvent> f_263124_;
+  public static final com.mojang.serialization.Codec<net.minecraft.core.Holder<net.minecraft.sounds.SoundEvent>> f_263130_;
+  private static final float f_262723_;
+  private final net.minecraft.resources.ResourceLocation f_11656_;
+  private final float f_215659_;
+  private final boolean f_215660_;
+  private static net.minecraft.sounds.SoundEvent m_263227_(net.minecraft.resources.ResourceLocation, java.util.Optional<java.lang.Float>);
+  public static net.minecraft.sounds.SoundEvent m_262824_(net.minecraft.resources.ResourceLocation);
+  public static net.minecraft.sounds.SoundEvent m_262856_(net.minecraft.resources.ResourceLocation, float);
+  private net.minecraft.sounds.SoundEvent(net.minecraft.resources.ResourceLocation, float, boolean);
+  public net.minecraft.resources.ResourceLocation m_11660_();
+  public float m_215668_(float);
+  private java.util.Optional<java.lang.Float> m_263201_();
+  public void m_263231_(net.minecraft.network.FriendlyByteBuf);
+  public static net.minecraft.sounds.SoundEvent m_263214_(net.minecraft.network.FriendlyByteBuf);
+  private static net.minecraft.sounds.SoundEvent m_263192_(net.minecraft.resources.ResourceLocation);
+  private static net.minecraft.sounds.SoundEvent m_263213_(net.minecraft.resources.ResourceLocation, java.lang.Float);
+  private static com.mojang.datafixers.kinds.App m_263241_(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+  static {};
+}

@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\AbstractMachineBE.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\BEFactory.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\ConsumeHandler.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\FryerBlockEntity.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\FryerMenu.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\MachineBlock.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\OilPressBlockEntity.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\OilPressMenu.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\SulfurCraft.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\client\FryerScreen.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\client\MachineLoopSound.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\client\OilPressScreen.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\client\ShaderPostProcessor.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\client\SoundMuffle.java
+C:\Users\User\Desktop\SulfurCraft\sulfurcraft\mdk\src\main\java\sulfurcraft\client\SulfurCraftClient.java

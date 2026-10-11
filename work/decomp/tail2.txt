@@ -1,0 +1,141 @@
+﻿  public net.minecraft.world.level.block.state.BlockState m_7417_(net.minecraft.world.level.block.state.BlockState, net.minecraft.core.Direction, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.LevelAccessor, net.minecraft.core.BlockPos, net.minecraft.core.BlockPos);
+    Code:
+       0: aload_1
+       1: getstatic     #39                 // Field f_52858_:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+       4: invokevirtual #63                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       7: checkcast     #41                 // class net/minecraft/world/level/block/state/properties/DoubleBlockHalf
+      10: astore        7
+      12: aload_2
+      13: invokevirtual #67                 // Method net/minecraft/core/Direction.m_122434_:()Lnet/minecraft/core/Direction$Axis;
+      16: getstatic     #71                 // Field net/minecraft/core/Direction$Axis.Y:Lnet/minecraft/core/Direction$Axis;
+      19: if_acmpne     70
+      22: aload         7
+      24: getstatic     #45                 // Field net/minecraft/world/level/block/state/properties/DoubleBlockHalf.LOWER:Lnet/minecraft/world/level/block/state/properties/DoubleBlockHalf;
+      27: if_acmpne     34
+      30: iconst_1
+      31: goto          35
+      34: iconst_0
+      35: aload_2
+      36: getstatic     #75                 // Field net/minecraft/core/Direction.UP:Lnet/minecraft/core/Direction;
+      39: if_acmpne     46
+      42: iconst_1
+      43: goto          47
+      46: iconst_0
+      47: if_icmpne     70
+      50: aload_3
+      51: aload_0
+      52: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      55: ifeq          119
+      58: aload_3
+      59: getstatic     #39                 // Field f_52858_:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+      62: invokevirtual #63                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+      65: aload         7
+      67: if_acmpeq     119
+      70: aload         7
+      72: getstatic     #45                 // Field net/minecraft/world/level/block/state/properties/DoubleBlockHalf.LOWER:Lnet/minecraft/world/level/block/state/properties/DoubleBlockHalf;
+      75: if_acmpne     105
+      78: aload_2
+      79: getstatic     #86                 // Field net/minecraft/core/Direction.DOWN:Lnet/minecraft/core/Direction;
+      82: if_acmpne     105
+      85: aload_1
+      86: aload         4
+      88: aload         5
+      90: invokevirtual #90                 // Method net/minecraft/world/level/block/state/BlockState.m_60710_:(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+      93: ifne          105
+      96: getstatic     #96                 // Field net/minecraft/world/level/block/Blocks.f_50016_:Lnet/minecraft/world/level/block/Block;
+      99: invokevirtual #102                // Method net/minecraft/world/level/block/Block.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     102: goto          118
+     105: aload_0
+     106: aload_1
+     107: aload_2
+     108: aload_3
+     109: aload         4
+     111: aload         5
+     113: aload         6
+     115: invokespecial #104                // Method net/minecraft/world/level/block/BushBlock.m_7417_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+     118: areturn
+     119: getstatic     #96                 // Field net/minecraft/world/level/block/Blocks.f_50016_:Lnet/minecraft/world/level/block/Block;
+     122: invokevirtual #102                // Method net/minecraft/world/level/block/Block.m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+     125: areturn
+
+  public net.minecraft.world.level.block.state.BlockState m_5573_(net.minecraft.world.item.context.BlockPlaceContext);
+    Code:
+       0: aload_1
+       1: invokevirtual #123                // Method net/minecraft/world/item/context/BlockPlaceContext.m_8083_:()Lnet/minecraft/core/BlockPos;
+       4: astore_2
+       5: aload_1
+       6: invokevirtual #127                // Method net/minecraft/world/item/context/BlockPlaceContext.m_43725_:()Lnet/minecraft/world/level/Level;
+       9: astore_3
+      10: aload_2
+      11: invokevirtual #131                // Method net/minecraft/core/BlockPos.m_123342_:()I
+      14: aload_3
+      15: invokevirtual #136                // Method net/minecraft/world/level/Level.m_151558_:()I
+      18: iconst_1
+      19: isub
+      20: if_icmpge     46
+      23: aload_3
+      24: aload_2
+      25: invokevirtual #139                // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+      28: invokevirtual #143                // Method net/minecraft/world/level/Level.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      31: aload_1
+      32: invokevirtual #147                // Method net/minecraft/world/level/block/state/BlockState.m_60629_:(Lnet/minecraft/world/item/context/BlockPlaceContext;)Z
+      35: ifeq          46
+      38: aload_0
+      39: aload_1
+      40: invokespecial #149                // Method net/minecraft/world/level/block/BushBlock.m_5573_:(Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/BlockState;
+      43: goto          47
+      46: aconst_null
+      47: areturn
+
+  public void m_6402_(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.entity.LivingEntity, net.minecraft.world.item.ItemStack);
+    Code:
+       0: aload_2
+       1: invokevirtual #139                // Method net/minecraft/core/BlockPos.m_7494_:()Lnet/minecraft/core/BlockPos;
+       4: astore        6
+       6: aload_1
+       7: aload         6
+       9: aload_1
+      10: aload         6
+      12: aload_0
+      13: invokevirtual #157                // Method m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+      16: getstatic     #39                 // Field f_52858_:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+      19: getstatic     #160                // Field net/minecraft/world/level/block/state/properties/DoubleBlockHalf.UPPER:Lnet/minecraft/world/level/block/state/properties/DoubleBlockHalf;
+      22: invokevirtual #49                 // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      25: checkcast     #37                 // class net/minecraft/world/level/block/state/BlockState
+      28: invokestatic  #164                // Method m_182453_:(Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraft/world/level/block/state/BlockState;
+      31: iconst_3
+      32: invokevirtual #168                // Method net/minecraft/world/level/Level.m_7731_:(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;I)Z
+      35: pop
+      36: return
+
+  public boolean m_7898_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos);
+    Code:
+       0: aload_1
+       1: getstatic     #39                 // Field f_52858_:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+       4: invokevirtual #63                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       7: getstatic     #160                // Field net/minecraft/world/level/block/state/properties/DoubleBlockHalf.UPPER:Lnet/minecraft/world/level/block/state/properties/DoubleBlockHalf;
+      10: if_acmpeq     21
+      13: aload_0
+      14: aload_1
+      15: aload_2
+      16: aload_3
+      17: invokespecial #179                // Method net/minecraft/world/level/block/BushBlock.m_7898_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+      20: ireturn
+      21: aload_2
+      22: aload_3
+      23: invokevirtual #182                // Method net/minecraft/core/BlockPos.m_7495_:()Lnet/minecraft/core/BlockPos;
+      26: invokeinterface #185,  2          // InterfaceMethod net/minecraft/world/level/LevelReader.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      31: astore        4
+      33: aload_1
+      34: invokevirtual #189                // Method net/minecraft/world/level/block/state/BlockState.m_60734_:()Lnet/minecraft/world/level/block/Block;
+      37: aload_0
+      38: if_acmpeq     49
+      41: aload_0
+      42: aload_1
+      43: aload_2
+      44: aload_3
+      45: invokespecial #179                // Method net/minecraft/world/level/block/BushBlock.m_7898_:(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/core/BlockPos;)Z
+      48: ireturn
+      49: aload         4
+      51: aload_0
+      52: invokevirtual #83                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z

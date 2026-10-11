@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:bread" },
+    { "item": "minecraft:bread" },
+    { "tag": "sulfurcraft:patty" },
+    { "tag": "sulfurcraft:patty" },
+    { "item": "sulfurcraft:cheese" },
+    { "item": "sulfurcraft:cheese" }
+  ],
+  "result": {
+    "item": "sulfurcraft:big_burger",
+    "count": 1
+  }
+}

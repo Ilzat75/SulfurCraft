@@ -1,0 +1,7 @@
+﻿javap : Error: class not found: SunflowerCropBlock.class
+строка:1 знак:149
++ ... opBlock.class' -Force; javap -p SunflowerCropBlock.class 2>&1 | Out-F ...
++                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: class no...CropBlock.class:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

@@ -1,0 +1,293 @@
+Compiled from "MobCategory.java"
+public final class net.minecraft.world.entity.MobCategory extends java.lang.Enum<net.minecraft.world.entity.MobCategory> implements net.minecraft.util.StringRepresentable, net.minecraftforge.common.IExtensibleEnum {
+  public static final net.minecraft.world.entity.MobCategory MONSTER;
+
+  public static final net.minecraft.world.entity.MobCategory CREATURE;
+
+  public static final net.minecraft.world.entity.MobCategory AMBIENT;
+
+  public static final net.minecraft.world.entity.MobCategory AXOLOTLS;
+
+  public static final net.minecraft.world.entity.MobCategory UNDERGROUND_WATER_CREATURE;
+
+  public static final net.minecraft.world.entity.MobCategory WATER_CREATURE;
+
+  public static final net.minecraft.world.entity.MobCategory WATER_AMBIENT;
+
+  public static final net.minecraft.world.entity.MobCategory MISC;
+
+  public static final com.mojang.serialization.Codec<net.minecraft.world.entity.MobCategory> f_21584_;
+
+  private static final java.util.Map<java.lang.String, net.minecraft.world.entity.MobCategory> BY_NAME;
+
+  private final int f_21586_;
+
+  private final boolean f_21587_;
+
+  private final boolean f_21588_;
+
+  private final java.lang.String f_21589_;
+
+  private final int f_21590_;
+
+  private final int f_21591_;
+
+  private static final net.minecraft.world.entity.MobCategory[] $VALUES;
+
+  public static net.minecraft.world.entity.MobCategory[] values();
+    Code:
+       0: getstatic     #46                 // Field $VALUES:[Lnet/minecraft/world/entity/MobCategory;
+       3: invokevirtual #51                 // Method "[Lnet/minecraft/world/entity/MobCategory;".clone:()Ljava/lang/Object;
+       6: checkcast     #47                 // class "[Lnet/minecraft/world/entity/MobCategory;"
+       9: areturn
+
+  public static net.minecraft.world.entity.MobCategory valueOf(java.lang.String);
+    Code:
+       0: ldc           #2                  // class net/minecraft/world/entity/MobCategory
+       2: aload_0
+       3: invokestatic  #56                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #2                  // class net/minecraft/world/entity/MobCategory
+       9: areturn
+
+  private net.minecraft.world.entity.MobCategory(java.lang.String, int, boolean, boolean, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #63                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: aload_0
+       7: bipush        32
+       9: putfield      #65                 // Field f_21590_:I
+      12: aload_0
+      13: aload_3
+      14: putfield      #67                 // Field f_21589_:Ljava/lang/String;
+      17: aload_0
+      18: iload         4
+      20: putfield      #69                 // Field f_21586_:I
+      23: aload_0
+      24: iload         5
+      26: putfield      #71                 // Field f_21587_:Z
+      29: aload_0
+      30: iload         6
+      32: putfield      #73                 // Field f_21588_:Z
+      35: aload_0
+      36: iload         7
+      38: putfield      #75                 // Field f_21591_:I
+      41: return
+
+  public java.lang.String m_21607_();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field f_21589_:Ljava/lang/String;
+       4: areturn
+
+  public java.lang.String m_7912_();
+    Code:
+       0: aload_0
+       1: getfield      #67                 // Field f_21589_:Ljava/lang/String;
+       4: areturn
+
+  public int m_21608_();
+    Code:
+       0: aload_0
+       1: getfield      #69                 // Field f_21586_:I
+       4: ireturn
+
+  public boolean m_21609_();
+    Code:
+       0: aload_0
+       1: getfield      #71                 // Field f_21587_:Z
+       4: ireturn
+
+  public boolean m_21610_();
+    Code:
+       0: aload_0
+       1: getfield      #73                 // Field f_21588_:Z
+       4: ireturn
+
+  public static net.minecraft.world.entity.MobCategory create(java.lang.String, java.lang.String, int, boolean, boolean, int);
+    Code:
+       0: new           #93                 // class java/lang/IllegalStateException
+       3: dup
+       4: ldc           #95                 // String Enum not extended
+       6: invokespecial #98                 // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+       9: athrow
+
+  public void init();
+    Code:
+       0: getstatic     #109                // Field BY_NAME:Ljava/util/Map;
+       3: aload_0
+       4: invokevirtual #111                // Method m_21607_:()Ljava/lang/String;
+       7: aload_0
+       8: invokeinterface #117,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      13: pop
+      14: return
+
+  public static net.minecraft.world.entity.MobCategory byName(java.lang.String);
+    Code:
+       0: getstatic     #109                // Field BY_NAME:Ljava/util/Map;
+       3: aload_0
+       4: invokeinterface #122,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       9: checkcast     #2                  // class net/minecraft/world/entity/MobCategory
+      12: areturn
+
+  public int m_21611_();
+    Code:
+       0: aload_0
+       1: getfield      #75                 // Field f_21591_:I
+       4: ireturn
+
+  public int m_21612_();
+    Code:
+       0: bipush        32
+       2: ireturn
+
+  private static net.minecraft.world.entity.MobCategory lambda$static$0(net.minecraft.world.entity.MobCategory);
+    Code:
+       0: aload_0
+       1: areturn
+
+  private static net.minecraft.world.entity.MobCategory[] m_147275_();
+    Code:
+       0: bipush        8
+       2: anewarray     #2                  // class net/minecraft/world/entity/MobCategory
+       5: dup
+       6: iconst_0
+       7: getstatic     #130                // Field MONSTER:Lnet/minecraft/world/entity/MobCategory;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #132                // Field CREATURE:Lnet/minecraft/world/entity/MobCategory;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #134                // Field AMBIENT:Lnet/minecraft/world/entity/MobCategory;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #136                // Field AXOLOTLS:Lnet/minecraft/world/entity/MobCategory;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #138                // Field UNDERGROUND_WATER_CREATURE:Lnet/minecraft/world/entity/MobCategory;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #140                // Field WATER_CREATURE:Lnet/minecraft/world/entity/MobCategory;
+      40: aastore
+      41: dup
+      42: bipush        6
+      44: getstatic     #142                // Field WATER_AMBIENT:Lnet/minecraft/world/entity/MobCategory;
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: getstatic     #144                // Field MISC:Lnet/minecraft/world/entity/MobCategory;
+      54: aastore
+      55: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class net/minecraft/world/entity/MobCategory
+       3: dup
+       4: ldc           #146                // String MONSTER
+       6: iconst_0
+       7: ldc           #148                // String monster
+       9: bipush        70
+      11: iconst_0
+      12: iconst_0
+      13: sipush        128
+      16: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+      19: putstatic     #130                // Field MONSTER:Lnet/minecraft/world/entity/MobCategory;
+      22: new           #2                  // class net/minecraft/world/entity/MobCategory
+      25: dup
+      26: ldc           #151                // String CREATURE
+      28: iconst_1
+      29: ldc           #153                // String creature
+      31: bipush        10
+      33: iconst_1
+      34: iconst_1
+      35: sipush        128
+      38: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+      41: putstatic     #132                // Field CREATURE:Lnet/minecraft/world/entity/MobCategory;
+      44: new           #2                  // class net/minecraft/world/entity/MobCategory
+      47: dup
+      48: ldc           #154                // String AMBIENT
+      50: iconst_2
+      51: ldc           #156                // String ambient
+      53: bipush        15
+      55: iconst_1
+      56: iconst_0
+      57: sipush        128
+      60: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+      63: putstatic     #134                // Field AMBIENT:Lnet/minecraft/world/entity/MobCategory;
+      66: new           #2                  // class net/minecraft/world/entity/MobCategory
+      69: dup
+      70: ldc           #157                // String AXOLOTLS
+      72: iconst_3
+      73: ldc           #159                // String axolotls
+      75: iconst_5
+      76: iconst_1
+      77: iconst_0
+      78: sipush        128
+      81: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+      84: putstatic     #136                // Field AXOLOTLS:Lnet/minecraft/world/entity/MobCategory;
+      87: new           #2                  // class net/minecraft/world/entity/MobCategory
+      90: dup
+      91: ldc           #160                // String UNDERGROUND_WATER_CREATURE
+      93: iconst_4
+      94: ldc           #162                // String underground_water_creature
+      96: iconst_5
+      97: iconst_1
+      98: iconst_0
+      99: sipush        128
+     102: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+     105: putstatic     #138                // Field UNDERGROUND_WATER_CREATURE:Lnet/minecraft/world/entity/MobCategory;
+     108: new           #2                  // class net/minecraft/world/entity/MobCategory
+     111: dup
+     112: ldc           #163                // String WATER_CREATURE
+     114: iconst_5
+     115: ldc           #165                // String water_creature
+     117: iconst_5
+     118: iconst_1
+     119: iconst_0
+     120: sipush        128
+     123: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+     126: putstatic     #140                // Field WATER_CREATURE:Lnet/minecraft/world/entity/MobCategory;
+     129: new           #2                  // class net/minecraft/world/entity/MobCategory
+     132: dup
+     133: ldc           #166                // String WATER_AMBIENT
+     135: bipush        6
+     137: ldc           #168                // String water_ambient
+     139: bipush        20
+     141: iconst_1
+     142: iconst_0
+     143: bipush        64
+     145: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+     148: putstatic     #142                // Field WATER_AMBIENT:Lnet/minecraft/world/entity/MobCategory;
+     151: new           #2                  // class net/minecraft/world/entity/MobCategory
+     154: dup
+     155: ldc           #169                // String MISC
+     157: bipush        7
+     159: ldc           #171                // String misc
+     161: iconst_m1
+     162: iconst_1
+     163: iconst_1
+     164: sipush        128
+     167: invokespecial #150                // Method "<init>":(Ljava/lang/String;ILjava/lang/String;IZZI)V
+     170: putstatic     #144                // Field MISC:Lnet/minecraft/world/entity/MobCategory;
+     173: invokestatic  #173                // Method m_147275_:()[Lnet/minecraft/world/entity/MobCategory;
+     176: putstatic     #46                 // Field $VALUES:[Lnet/minecraft/world/entity/MobCategory;
+     179: invokedynamic #188,  0            // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+     184: invokedynamic #197,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+     189: invokestatic  #201                // InterfaceMethod net/minecraftforge/common/IExtensibleEnum.createCodecForExtensibleEnum:(Ljava/util/function/Supplier;Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;
+     192: putstatic     #203                // Field f_21584_:Lcom/mojang/serialization/Codec;
+     195: invokestatic  #176                // Method values:()[Lnet/minecraft/world/entity/MobCategory;
+     198: invokestatic  #209                // Method java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+     201: invokedynamic #213,  0            // InvokeDynamic #2:apply:()Ljava/util/function/Function;
+     206: invokedynamic #218,  0            // InvokeDynamic #3:apply:()Ljava/util/function/Function;
+     211: invokestatic  #224                // Method java/util/stream/Collectors.toMap:(Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;
+     214: invokeinterface #230,  2          // InterfaceMethod java/util/stream/Stream.collect:(Ljava/util/stream/Collector;)Ljava/lang/Object;
+     219: checkcast     #113                // class java/util/Map
+     222: putstatic     #109                // Field BY_NAME:Ljava/util/Map;
+     225: return
+}

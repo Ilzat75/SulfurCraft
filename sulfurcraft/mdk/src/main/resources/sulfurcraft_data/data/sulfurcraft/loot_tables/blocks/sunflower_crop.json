@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        { "condition": "minecraft:block_state_property", "block": "sulfurcraft:sunflower_crop", "properties": { "half": "lower", "age": "3" } },
+        { "condition": "minecraft:survives_explosion" }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "sulfurcraft:sunflower_seeds",
+          "functions": [ { "function": "minecraft:set_count", "count": { "type": "minecraft:uniform", "min": 10.0, "max": 20.0 } } ]
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        { "condition": "minecraft:block_state_property", "block": "sulfurcraft:sunflower_crop", "properties": { "half": "lower", "age": "0" } },
+        { "condition": "minecraft:survives_explosion" }
+      ],
+      "entries": [ { "type": "minecraft:item", "name": "sulfurcraft:sunflower_seeds" } ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        { "condition": "minecraft:block_state_property", "block": "sulfurcraft:sunflower_crop", "properties": { "half": "lower", "age": "1" } },
+        { "condition": "minecraft:survives_explosion" }
+      ],
+      "entries": [ { "type": "minecraft:item", "name": "sulfurcraft:sunflower_seeds" } ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "conditions": [
+        { "condition": "minecraft:block_state_property", "block": "sulfurcraft:sunflower_crop", "properties": { "half": "lower", "age": "2" } },
+        { "condition": "minecraft:survives_explosion" }
+      ],
+      "entries": [ { "type": "minecraft:item", "name": "sulfurcraft:sunflower_seeds" } ]
+    }
+  ],
+  "random_sequence": "sulfurcraft:blocks/sunflower_crop"
+}

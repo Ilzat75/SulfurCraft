@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "biomesoplenty:brimstone"
+  },
+  "result": "sulfurcraft:sulfur_crystal",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" }
+  ],
+  "result": {
+    "item": "biomesoplenty:dried_salt",
+    "count": 1
+  }
+}

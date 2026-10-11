@@ -1,0 +1,1120 @@
+﻿Compiled from "Shapes.java"
+public final class net.minecraft.world.phys.shapes.Shapes {
+  public static final double f_166025_;
+
+  public static final double f_166026_;
+
+  private static final net.minecraft.world.phys.shapes.VoxelShape f_83037_;
+
+  public static final net.minecraft.world.phys.shapes.VoxelShape f_83036_;
+
+  private static final net.minecraft.world.phys.shapes.VoxelShape f_83038_;
+
+  public net.minecraft.world.phys.shapes.Shapes();
+    Code:
+       0: aload_0
+       1: invokespecial #41                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83040_();
+    Code:
+       0: getstatic     #47                 // Field f_83038_:Lnet/minecraft/world/phys/shapes/VoxelShape;
+       3: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83144_();
+    Code:
+       0: getstatic     #50                 // Field f_83037_:Lnet/minecraft/world/phys/shapes/VoxelShape;
+       3: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83048_(double, double, double, double, double, double);
+    Code:
+       0: dload_0
+       1: dload         6
+       3: dcmpl
+       4: ifgt          22
+       7: dload_2
+       8: dload         8
+      10: dcmpl
+      11: ifgt          22
+      14: dload         4
+      16: dload         10
+      18: dcmpl
+      19: ifle          32
+      22: new           #54                 // class java/lang/IllegalArgumentException
+      25: dup
+      26: ldc           #56                 // String The min values need to be smaller or equals to the max values
+      28: invokespecial #59                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      31: athrow
+      32: dload_0
+      33: dload_2
+      34: dload         4
+      36: dload         6
+      38: dload         8
+      40: dload         10
+      42: invokestatic  #62                 // Method m_166049_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      45: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_166049_(double, double, double, double, double, double);
+    Code:
+       0: dload         6
+       2: dload_0
+       3: dsub
+       4: ldc2_w        #29                 // double 1.0E-7d
+       7: dcmpg
+       8: iflt          34
+      11: dload         8
+      13: dload_2
+      14: dsub
+      15: ldc2_w        #29                 // double 1.0E-7d
+      18: dcmpg
+      19: iflt          34
+      22: dload         10
+      24: dload         4
+      26: dsub
+      27: ldc2_w        #29                 // double 1.0E-7d
+      30: dcmpg
+      31: ifge          38
+      34: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      37: areturn
+      38: dload_0
+      39: dload         6
+      41: invokestatic  #74                 // Method m_83041_:(DD)I
+      44: istore        12
+      46: dload_2
+      47: dload         8
+      49: invokestatic  #74                 // Method m_83041_:(DD)I
+      52: istore        13
+      54: dload         4
+      56: dload         10
+      58: invokestatic  #74                 // Method m_83041_:(DD)I
+      61: istore        14
+      63: iload         12
+      65: iflt          78
+      68: iload         13
+      70: iflt          78
+      73: iload         14
+      75: ifge          138
+      78: new           #76                 // class net/minecraft/world/phys/shapes/ArrayVoxelShape
+      81: dup
+      82: getstatic     #50                 // Field f_83037_:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      85: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+      88: iconst_2
+      89: newarray       double
+      91: dup
+      92: iconst_0
+      93: dload_0
+      94: dastore
+      95: dup
+      96: iconst_1
+      97: dload         6
+      99: dastore
+     100: invokestatic  #88                 // Method it/unimi/dsi/fastutil/doubles/DoubleArrayList.wrap:([D)Lit/unimi/dsi/fastutil/doubles/DoubleArrayList;
+     103: iconst_2
+     104: newarray       double
+     106: dup
+     107: iconst_0
+     108: dload_2
+     109: dastore
+     110: dup
+     111: iconst_1
+     112: dload         8
+     114: dastore
+     115: invokestatic  #88                 // Method it/unimi/dsi/fastutil/doubles/DoubleArrayList.wrap:([D)Lit/unimi/dsi/fastutil/doubles/DoubleArrayList;
+     118: iconst_2
+     119: newarray       double
+     121: dup
+     122: iconst_0
+     123: dload         4
+     125: dastore
+     126: dup
+     127: iconst_1
+     128: dload         10
+     130: dastore
+     131: invokestatic  #88                 // Method it/unimi/dsi/fastutil/doubles/DoubleArrayList.wrap:([D)Lit/unimi/dsi/fastutil/doubles/DoubleArrayList;
+     134: invokespecial #91                 // Method net/minecraft/world/phys/shapes/ArrayVoxelShape."<init>":(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;)V
+     137: areturn
+     138: iload         12
+     140: ifne          157
+     143: iload         13
+     145: ifne          157
+     148: iload         14
+     150: ifne          157
+     153: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+     156: areturn
+     157: iconst_1
+     158: iload         12
+     160: ishl
+     161: istore        15
+     163: iconst_1
+     164: iload         13
+     166: ishl
+     167: istore        16
+     169: iconst_1
+     170: iload         14
+     172: ishl
+     173: istore        17
+     175: iload         15
+     177: iload         16
+     179: iload         17
+     181: dload_0
+     182: iload         15
+     184: i2d
+     185: dmul
+     186: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+     189: l2i
+     190: dload_2
+     191: iload         16
+     193: i2d
+     194: dmul
+     195: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+     198: l2i
+     199: dload         4
+     201: iload         17
+     203: i2d
+     204: dmul
+     205: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+     208: l2i
+     209: dload         6
+     211: iload         15
+     213: i2d
+     214: dmul
+     215: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+     218: l2i
+     219: dload         8
+     221: iload         16
+     223: i2d
+     224: dmul
+     225: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+     228: l2i
+     229: dload         10
+     231: iload         17
+     233: i2d
+     234: dmul
+     235: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+     238: l2i
+     239: invokestatic  #105                // Method net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape.m_165932_:(IIIIIIIII)Lnet/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape;
+     242: astore        18
+     244: new           #107                // class net/minecraft/world/phys/shapes/CubeVoxelShape
+     247: dup
+     248: aload         18
+     250: invokespecial #110                // Method net/minecraft/world/phys/shapes/CubeVoxelShape."<init>":(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;)V
+     253: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83064_(net.minecraft.world.phys.AABB);
+    Code:
+       0: aload_0
+       1: getfield      #132                // Field net/minecraft/world/phys/AABB.f_82288_:D
+       4: aload_0
+       5: getfield      #135                // Field net/minecraft/world/phys/AABB.f_82289_:D
+       8: aload_0
+       9: getfield      #138                // Field net/minecraft/world/phys/AABB.f_82290_:D
+      12: aload_0
+      13: getfield      #141                // Field net/minecraft/world/phys/AABB.f_82291_:D
+      16: aload_0
+      17: getfield      #144                // Field net/minecraft/world/phys/AABB.f_82292_:D
+      20: aload_0
+      21: getfield      #147                // Field net/minecraft/world/phys/AABB.f_82293_:D
+      24: invokestatic  #62                 // Method m_166049_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      27: areturn
+
+  protected static int m_83041_(double, double);
+    Code:
+       0: dload_0
+       1: ldc2_w        #151                // double -1.0E-7d
+       4: dcmpg
+       5: iflt          16
+       8: dload_2
+       9: ldc2_w        #153                // double 1.0000001d
+      12: dcmpl
+      13: ifle          18
+      16: iconst_m1
+      17: ireturn
+      18: iconst_0
+      19: istore        4
+      21: iload         4
+      23: iconst_3
+      24: if_icmpgt     126
+      27: iconst_1
+      28: iload         4
+      30: ishl
+      31: istore        5
+      33: dload_0
+      34: iload         5
+      36: i2d
+      37: dmul
+      38: dstore        6
+      40: dload_2
+      41: iload         5
+      43: i2d
+      44: dmul
+      45: dstore        8
+      47: dload         6
+      49: dload         6
+      51: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+      54: l2d
+      55: dsub
+      56: invokestatic  #158                // Method java/lang/Math.abs:(D)D
+      59: ldc2_w        #29                 // double 1.0E-7d
+      62: iload         5
+      64: i2d
+      65: dmul
+      66: dcmpg
+      67: ifge          74
+      70: iconst_1
+      71: goto          75
+      74: iconst_0
+      75: istore        10
+      77: dload         8
+      79: dload         8
+      81: invokestatic  #99                 // Method java/lang/Math.round:(D)J
+      84: l2d
+      85: dsub
+      86: invokestatic  #158                // Method java/lang/Math.abs:(D)D
+      89: ldc2_w        #29                 // double 1.0E-7d
+      92: iload         5
+      94: i2d
+      95: dmul
+      96: dcmpg
+      97: ifge          104
+     100: iconst_1
+     101: goto          105
+     104: iconst_0
+     105: istore        11
+     107: iload         10
+     109: ifeq          120
+     112: iload         11
+     114: ifeq          120
+     117: iload         4
+     119: ireturn
+     120: iinc          4, 1
+     123: goto          21
+     126: iconst_m1
+     127: ireturn
+
+  protected static long m_83055_(int, int);
+    Code:
+       0: iload_0
+       1: i2l
+       2: iload_1
+       3: iload_0
+       4: iload_1
+       5: invokestatic  #173                // Method com/google/common/math/IntMath.gcd:(II)I
+       8: idiv
+       9: i2l
+      10: lmul
+      11: lreturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83110_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getstatic     #183                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82695_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+       5: invokestatic  #187                // Method m_83113_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+       8: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83124_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape...);
+    Code:
+       0: aload_1
+       1: invokestatic  #197                // Method java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+       4: aload_0
+       5: invokedynamic #214,  0            // InvokeDynamic #0:apply:()Ljava/util/function/BinaryOperator;
+      10: invokeinterface #220,  3          // InterfaceMethod java/util/stream/Stream.reduce:(Ljava/lang/Object;Ljava/util/function/BinaryOperator;)Ljava/lang/Object;
+      15: checkcast     #78                 // class net/minecraft/world/phys/shapes/VoxelShape
+      18: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83113_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: invokestatic  #226                // Method m_83148_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+       6: invokevirtual #229                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83296_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+       9: areturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83148_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+    Code:
+       0: aload_2
+       1: iconst_0
+       2: iconst_0
+       3: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+       8: ifeq          25
+      11: new           #54                 // class java/lang/IllegalArgumentException
+      14: dup
+      15: invokespecial #237                // Method java/lang/IllegalArgumentException."<init>":()V
+      18: invokestatic  #243                // Method net/minecraft/Util.m_137570_:(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      21: checkcast     #54                 // class java/lang/IllegalArgumentException
+      24: athrow
+      25: aload_0
+      26: aload_1
+      27: if_acmpne     49
+      30: aload_2
+      31: iconst_1
+      32: iconst_1
+      33: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      38: ifeq          45
+      41: aload_0
+      42: goto          48
+      45: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      48: areturn
+      49: aload_2
+      50: iconst_1
+      51: iconst_0
+      52: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      57: istore_3
+      58: aload_2
+      59: iconst_0
+      60: iconst_1
+      61: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      66: istore        4
+      68: aload_0
+      69: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      72: ifeq          88
+      75: iload         4
+      77: ifeq          84
+      80: aload_1
+      81: goto          87
+      84: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      87: areturn
+      88: aload_1
+      89: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      92: ifeq          107
+      95: iload_3
+      96: ifeq          103
+      99: aload_0
+     100: goto          106
+     103: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+     106: areturn
+     107: iconst_1
+     108: aload_0
+     109: getstatic     #251                // Field net/minecraft/core/Direction$Axis.X:Lnet/minecraft/core/Direction$Axis;
+     112: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     115: aload_1
+     116: getstatic     #251                // Field net/minecraft/core/Direction$Axis.X:Lnet/minecraft/core/Direction$Axis;
+     119: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     122: iload_3
+     123: iload         4
+     125: invokestatic  #259                // Method m_83058_:(ILit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)Lnet/minecraft/world/phys/shapes/IndexMerger;
+     128: astore        5
+     130: aload         5
+     132: invokeinterface #263,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.size:()I
+     137: iconst_1
+     138: isub
+     139: aload_0
+     140: getstatic     #266                // Field net/minecraft/core/Direction$Axis.Y:Lnet/minecraft/core/Direction$Axis;
+     143: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     146: aload_1
+     147: getstatic     #266                // Field net/minecraft/core/Direction$Axis.Y:Lnet/minecraft/core/Direction$Axis;
+     150: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     153: iload_3
+     154: iload         4
+     156: invokestatic  #259                // Method m_83058_:(ILit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)Lnet/minecraft/world/phys/shapes/IndexMerger;
+     159: astore        6
+     161: aload         5
+     163: invokeinterface #263,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.size:()I
+     168: iconst_1
+     169: isub
+     170: aload         6
+     172: invokeinterface #263,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.size:()I
+     177: iconst_1
+     178: isub
+     179: imul
+     180: aload_0
+     181: getstatic     #268                // Field net/minecraft/core/Direction$Axis.Z:Lnet/minecraft/core/Direction$Axis;
+     184: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     187: aload_1
+     188: getstatic     #268                // Field net/minecraft/core/Direction$Axis.Z:Lnet/minecraft/core/Direction$Axis;
+     191: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     194: iload_3
+     195: iload         4
+     197: invokestatic  #259                // Method m_83058_:(ILit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)Lnet/minecraft/world/phys/shapes/IndexMerger;
+     200: astore        7
+     202: aload_0
+     203: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+     206: aload_1
+     207: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+     210: aload         5
+     212: aload         6
+     214: aload         7
+     216: aload_2
+     217: invokestatic  #272                // Method net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape.m_82641_:(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/BooleanOp;)Lnet/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape;
+     220: astore        8
+     222: aload         5
+     224: instanceof    #274                // class net/minecraft/world/phys/shapes/DiscreteCubeMerger
+     227: ifeq          256
+     230: aload         6
+     232: instanceof    #274                // class net/minecraft/world/phys/shapes/DiscreteCubeMerger
+     235: ifeq          256
+     238: aload         7
+     240: instanceof    #274                // class net/minecraft/world/phys/shapes/DiscreteCubeMerger
+     243: ifeq          256
+     246: new           #107                // class net/minecraft/world/phys/shapes/CubeVoxelShape
+     249: dup
+     250: aload         8
+     252: invokespecial #110                // Method net/minecraft/world/phys/shapes/CubeVoxelShape."<init>":(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;)V
+     255: areturn
+     256: new           #76                 // class net/minecraft/world/phys/shapes/ArrayVoxelShape
+     259: dup
+     260: aload         8
+     262: aload         5
+     264: invokeinterface #278,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.m_6241_:()Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     269: aload         6
+     271: invokeinterface #278,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.m_6241_:()Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     276: aload         7
+     278: invokeinterface #278,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.m_6241_:()Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     283: invokespecial #91                 // Method net/minecraft/world/phys/shapes/ArrayVoxelShape."<init>":(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;)V
+     286: areturn
+
+  public static boolean m_83157_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+    Code:
+       0: aload_2
+       1: iconst_0
+       2: iconst_0
+       3: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+       8: ifeq          25
+      11: new           #54                 // class java/lang/IllegalArgumentException
+      14: dup
+      15: invokespecial #237                // Method java/lang/IllegalArgumentException."<init>":()V
+      18: invokestatic  #243                // Method net/minecraft/Util.m_137570_:(Ljava/lang/Throwable;)Ljava/lang/Throwable;
+      21: checkcast     #54                 // class java/lang/IllegalArgumentException
+      24: athrow
+      25: aload_0
+      26: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      29: istore_3
+      30: aload_1
+      31: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      34: istore        4
+      36: iload_3
+      37: ifne          45
+      40: iload         4
+      42: ifeq          71
+      45: aload_2
+      46: iload_3
+      47: ifne          54
+      50: iconst_1
+      51: goto          55
+      54: iconst_0
+      55: iload         4
+      57: ifne          64
+      60: iconst_1
+      61: goto          65
+      64: iconst_0
+      65: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      70: ireturn
+      71: aload_0
+      72: aload_1
+      73: if_acmpne     85
+      76: aload_2
+      77: iconst_1
+      78: iconst_1
+      79: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      84: ireturn
+      85: aload_2
+      86: iconst_1
+      87: iconst_0
+      88: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      93: istore        5
+      95: aload_2
+      96: iconst_0
+      97: iconst_1
+      98: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+     103: istore        6
+     105: getstatic     #290                // Field net/minecraft/core/AxisCycle.f_121783_:[Lnet/minecraft/core/Direction$Axis;
+     108: astore        7
+     110: aload         7
+     112: arraylength
+     113: istore        8
+     115: iconst_0
+     116: istore        9
+     118: iload         9
+     120: iload         8
+     122: if_icmpge     210
+     125: aload         7
+     127: iload         9
+     129: aaload
+     130: astore        10
+     132: aload_0
+     133: aload         10
+     135: invokevirtual #295                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83297_:(Lnet/minecraft/core/Direction$Axis;)D
+     138: aload_1
+     139: aload         10
+     141: invokevirtual #298                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83288_:(Lnet/minecraft/core/Direction$Axis;)D
+     144: ldc2_w        #29                 // double 1.0E-7d
+     147: dsub
+     148: dcmpg
+     149: ifge          168
+     152: iload         5
+     154: ifne          162
+     157: iload         6
+     159: ifeq          166
+     162: iconst_1
+     163: goto          167
+     166: iconst_0
+     167: ireturn
+     168: aload_1
+     169: aload         10
+     171: invokevirtual #295                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83297_:(Lnet/minecraft/core/Direction$Axis;)D
+     174: aload_0
+     175: aload         10
+     177: invokevirtual #298                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83288_:(Lnet/minecraft/core/Direction$Axis;)D
+     180: ldc2_w        #29                 // double 1.0E-7d
+     183: dsub
+     184: dcmpg
+     185: ifge          204
+     188: iload         5
+     190: ifne          198
+     193: iload         6
+     195: ifeq          202
+     198: iconst_1
+     199: goto          203
+     202: iconst_0
+     203: ireturn
+     204: iinc          9, 1
+     207: goto          118
+     210: iconst_1
+     211: aload_0
+     212: getstatic     #251                // Field net/minecraft/core/Direction$Axis.X:Lnet/minecraft/core/Direction$Axis;
+     215: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     218: aload_1
+     219: getstatic     #251                // Field net/minecraft/core/Direction$Axis.X:Lnet/minecraft/core/Direction$Axis;
+     222: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     225: iload         5
+     227: iload         6
+     229: invokestatic  #259                // Method m_83058_:(ILit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)Lnet/minecraft/world/phys/shapes/IndexMerger;
+     232: astore        7
+     234: aload         7
+     236: invokeinterface #263,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.size:()I
+     241: iconst_1
+     242: isub
+     243: aload_0
+     244: getstatic     #266                // Field net/minecraft/core/Direction$Axis.Y:Lnet/minecraft/core/Direction$Axis;
+     247: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     250: aload_1
+     251: getstatic     #266                // Field net/minecraft/core/Direction$Axis.Y:Lnet/minecraft/core/Direction$Axis;
+     254: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     257: iload         5
+     259: iload         6
+     261: invokestatic  #259                // Method m_83058_:(ILit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)Lnet/minecraft/world/phys/shapes/IndexMerger;
+     264: astore        8
+     266: aload         7
+     268: invokeinterface #263,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.size:()I
+     273: iconst_1
+     274: isub
+     275: aload         8
+     277: invokeinterface #263,  1          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.size:()I
+     282: iconst_1
+     283: isub
+     284: imul
+     285: aload_0
+     286: getstatic     #268                // Field net/minecraft/core/Direction$Axis.Z:Lnet/minecraft/core/Direction$Axis;
+     289: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     292: aload_1
+     293: getstatic     #268                // Field net/minecraft/core/Direction$Axis.Z:Lnet/minecraft/core/Direction$Axis;
+     296: invokevirtual #255                // Method net/minecraft/world/phys/shapes/VoxelShape.m_7700_:(Lnet/minecraft/core/Direction$Axis;)Lit/unimi/dsi/fastutil/doubles/DoubleList;
+     299: iload         5
+     301: iload         6
+     303: invokestatic  #259                // Method m_83058_:(ILit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)Lnet/minecraft/world/phys/shapes/IndexMerger;
+     306: astore        9
+     308: aload         7
+     310: aload         8
+     312: aload         9
+     314: aload_0
+     315: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+     318: aload_1
+     319: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+     322: aload_2
+     323: invokestatic  #302                // Method m_83103_:(Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Z
+     326: ireturn
+
+  private static boolean m_83103_(net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.DiscreteVoxelShape, net.minecraft.world.phys.shapes.DiscreteVoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload         5
+       5: aload_3
+       6: aload         4
+       8: invokedynamic #316,  0            // InvokeDynamic #1:m_82908_:(Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/BooleanOp;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;)Lnet/minecraft/world/phys/shapes/IndexMerger$IndexConsumer;
+      13: invokeinterface #320,  2          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.m_6200_:(Lnet/minecraft/world/phys/shapes/IndexMerger$IndexConsumer;)Z
+      18: ifne          25
+      21: iconst_1
+      22: goto          26
+      25: iconst_0
+      26: ireturn
+
+  public static double m_193135_(net.minecraft.core.Direction$Axis, net.minecraft.world.phys.AABB, java.lang.Iterable<net.minecraft.world.phys.shapes.VoxelShape>, double);
+    Code:
+       0: aload_2
+       1: invokeinterface #335,  1          // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+       6: astore        5
+       8: aload         5
+      10: invokeinterface #340,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      15: ifeq          55
+      18: aload         5
+      20: invokeinterface #344,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      25: checkcast     #78                 // class net/minecraft/world/phys/shapes/VoxelShape
+      28: astore        6
+      30: dload_3
+      31: invokestatic  #158                // Method java/lang/Math.abs:(D)D
+      34: ldc2_w        #29                 // double 1.0E-7d
+      37: dcmpg
+      38: ifge          43
+      41: dconst_0
+      42: dreturn
+      43: aload         6
+      45: aload_0
+      46: aload_1
+      47: dload_3
+      48: invokevirtual #348                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83259_:(Lnet/minecraft/core/Direction$Axis;Lnet/minecraft/world/phys/AABB;D)D
+      51: dstore_3
+      52: goto          8
+      55: dload_3
+      56: dreturn
+
+  public static boolean m_83117_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.core.Direction);
+    Code:
+       0: aload_0
+       1: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+       4: if_acmpne     16
+       7: aload_1
+       8: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      11: if_acmpne     16
+      14: iconst_1
+      15: ireturn
+      16: aload_1
+      17: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      20: ifeq          25
+      23: iconst_0
+      24: ireturn
+      25: aload_2
+      26: invokevirtual #360                // Method net/minecraft/core/Direction.m_122434_:()Lnet/minecraft/core/Direction$Axis;
+      29: astore_3
+      30: aload_2
+      31: invokevirtual #364                // Method net/minecraft/core/Direction.m_122421_:()Lnet/minecraft/core/Direction$AxisDirection;
+      34: astore        4
+      36: aload         4
+      38: getstatic     #368                // Field net/minecraft/core/Direction$AxisDirection.POSITIVE:Lnet/minecraft/core/Direction$AxisDirection;
+      41: if_acmpne     48
+      44: aload_0
+      45: goto          49
+      48: aload_1
+      49: astore        5
+      51: aload         4
+      53: getstatic     #368                // Field net/minecraft/core/Direction$AxisDirection.POSITIVE:Lnet/minecraft/core/Direction$AxisDirection;
+      56: if_acmpne     63
+      59: aload_1
+      60: goto          64
+      63: aload_0
+      64: astore        6
+      66: aload         4
+      68: getstatic     #368                // Field net/minecraft/core/Direction$AxisDirection.POSITIVE:Lnet/minecraft/core/Direction$AxisDirection;
+      71: if_acmpne     80
+      74: getstatic     #371                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82685_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+      77: goto          83
+      80: getstatic     #374                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82683_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+      83: astore        7
+      85: aload         5
+      87: aload_3
+      88: invokevirtual #295                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83297_:(Lnet/minecraft/core/Direction$Axis;)D
+      91: dconst_1
+      92: ldc2_w        #29                 // double 1.0E-7d
+      95: invokestatic  #380                // Method com/google/common/math/DoubleMath.fuzzyEquals:(DDD)Z
+      98: ifeq          161
+     101: aload         6
+     103: aload_3
+     104: invokevirtual #298                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83288_:(Lnet/minecraft/core/Direction$Axis;)D
+     107: dconst_0
+     108: ldc2_w        #29                 // double 1.0E-7d
+     111: invokestatic  #380                // Method com/google/common/math/DoubleMath.fuzzyEquals:(DDD)Z
+     114: ifeq          161
+     117: new           #382                // class net/minecraft/world/phys/shapes/SliceShape
+     120: dup
+     121: aload         5
+     123: aload_3
+     124: aload         5
+     126: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+     129: aload_3
+     130: invokevirtual #388                // Method net/minecraft/world/phys/shapes/DiscreteVoxelShape.m_82850_:(Lnet/minecraft/core/Direction$Axis;)I
+     133: iconst_1
+     134: isub
+     135: invokespecial #391                // Method net/minecraft/world/phys/shapes/SliceShape."<init>":(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/core/Direction$Axis;I)V
+     138: new           #382                // class net/minecraft/world/phys/shapes/SliceShape
+     141: dup
+     142: aload         6
+     144: aload_3
+     145: iconst_0
+     146: invokespecial #391                // Method net/minecraft/world/phys/shapes/SliceShape."<init>":(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/core/Direction$Axis;I)V
+     149: aload         7
+     151: invokestatic  #393                // Method m_83157_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Z
+     154: ifne          161
+     157: iconst_1
+     158: goto          162
+     161: iconst_0
+     162: ireturn
+
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83121_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.core.Direction);
+    Code:
+       0: aload_0
+       1: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+       4: if_acmpne     11
+       7: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      10: areturn
+      11: aload_1
+      12: invokevirtual #360                // Method net/minecraft/core/Direction.m_122434_:()Lnet/minecraft/core/Direction$Axis;
+      15: astore        4
+      17: aload_1
+      18: invokevirtual #364                // Method net/minecraft/core/Direction.m_122421_:()Lnet/minecraft/core/Direction$AxisDirection;
+      21: getstatic     #368                // Field net/minecraft/core/Direction$AxisDirection.POSITIVE:Lnet/minecraft/core/Direction$AxisDirection;
+      24: if_acmpne     56
+      27: aload_0
+      28: aload         4
+      30: invokevirtual #295                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83297_:(Lnet/minecraft/core/Direction$Axis;)D
+      33: dconst_1
+      34: ldc2_w        #29                 // double 1.0E-7d
+      37: invokestatic  #380                // Method com/google/common/math/DoubleMath.fuzzyEquals:(DDD)Z
+      40: istore_2
+      41: aload_0
+      42: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+      45: aload         4
+      47: invokevirtual #388                // Method net/minecraft/world/phys/shapes/DiscreteVoxelShape.m_82850_:(Lnet/minecraft/core/Direction$Axis;)I
+      50: iconst_1
+      51: isub
+      52: istore_3
+      53: goto          72
+      56: aload_0
+      57: aload         4
+      59: invokevirtual #298                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83288_:(Lnet/minecraft/core/Direction$Axis;)D
+      62: dconst_0
+      63: ldc2_w        #29                 // double 1.0E-7d
+      66: invokestatic  #380                // Method com/google/common/math/DoubleMath.fuzzyEquals:(DDD)Z
+      69: istore_2
+      70: iconst_0
+      71: istore_3
+      72: iload_2
+      73: ifne          80
+      76: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      79: areturn
+      80: new           #382                // class net/minecraft/world/phys/shapes/SliceShape
+      83: dup
+      84: aload_0
+      85: aload         4
+      87: iload_3
+      88: invokespecial #391                // Method net/minecraft/world/phys/shapes/SliceShape."<init>":(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/core/Direction$Axis;I)V
+      91: areturn
+
+  public static boolean m_83152_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.core.Direction);
+    Code:
+       0: aload_0
+       1: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+       4: if_acmpeq     14
+       7: aload_1
+       8: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      11: if_acmpne     16
+      14: iconst_1
+      15: ireturn
+      16: aload_2
+      17: invokevirtual #360                // Method net/minecraft/core/Direction.m_122434_:()Lnet/minecraft/core/Direction$Axis;
+      20: astore_3
+      21: aload_2
+      22: invokevirtual #364                // Method net/minecraft/core/Direction.m_122421_:()Lnet/minecraft/core/Direction$AxisDirection;
+      25: astore        4
+      27: aload         4
+      29: getstatic     #368                // Field net/minecraft/core/Direction$AxisDirection.POSITIVE:Lnet/minecraft/core/Direction$AxisDirection;
+      32: if_acmpne     39
+      35: aload_0
+      36: goto          40
+      39: aload_1
+      40: astore        5
+      42: aload         4
+      44: getstatic     #368                // Field net/minecraft/core/Direction$AxisDirection.POSITIVE:Lnet/minecraft/core/Direction$AxisDirection;
+      47: if_acmpne     54
+      50: aload_1
+      51: goto          55
+      54: aload_0
+      55: astore        6
+      57: aload         5
+      59: aload_3
+      60: invokevirtual #295                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83297_:(Lnet/minecraft/core/Direction$Axis;)D
+      63: dconst_1
+      64: ldc2_w        #29                 // double 1.0E-7d
+      67: invokestatic  #380                // Method com/google/common/math/DoubleMath.fuzzyEquals:(DDD)Z
+      70: ifne          78
+      73: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      76: astore        5
+      78: aload         6
+      80: aload_3
+      81: invokevirtual #298                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83288_:(Lnet/minecraft/core/Direction$Axis;)D
+      84: dconst_0
+      85: ldc2_w        #29                 // double 1.0E-7d
+      88: invokestatic  #380                // Method com/google/common/math/DoubleMath.fuzzyEquals:(DDD)Z
+      91: ifne          99
+      94: invokestatic  #70                 // Method m_83040_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      97: astore        6
+      99: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+     102: new           #382                // class net/minecraft/world/phys/shapes/SliceShape
+     105: dup
+     106: aload         5
+     108: aload_3
+     109: aload         5
+     111: getfield      #82                 // Field net/minecraft/world/phys/shapes/VoxelShape.f_83211_:Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;
+     114: aload_3
+     115: invokevirtual #388                // Method net/minecraft/world/phys/shapes/DiscreteVoxelShape.m_82850_:(Lnet/minecraft/core/Direction$Axis;)I
+     118: iconst_1
+     119: isub
+     120: invokespecial #391                // Method net/minecraft/world/phys/shapes/SliceShape."<init>":(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/core/Direction$Axis;I)V
+     123: new           #382                // class net/minecraft/world/phys/shapes/SliceShape
+     126: dup
+     127: aload         6
+     129: aload_3
+     130: iconst_0
+     131: invokespecial #391                // Method net/minecraft/world/phys/shapes/SliceShape."<init>":(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/core/Direction$Axis;I)V
+     134: getstatic     #183                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82695_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+     137: invokestatic  #226                // Method m_83148_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+     140: getstatic     #371                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82685_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+     143: invokestatic  #393                // Method m_83157_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Z
+     146: ifne          153
+     149: iconst_1
+     150: goto          154
+     153: iconst_0
+     154: ireturn
+
+  public static boolean m_83145_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape);
+    Code:
+       0: aload_0
+       1: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+       4: if_acmpeq     14
+       7: aload_1
+       8: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      11: if_acmpne     16
+      14: iconst_1
+      15: ireturn
+      16: aload_0
+      17: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      20: ifeq          32
+      23: aload_1
+      24: invokevirtual #247                // Method net/minecraft/world/phys/shapes/VoxelShape.m_83281_:()Z
+      27: ifeq          32
+      30: iconst_0
+      31: ireturn
+      32: invokestatic  #93                 // Method m_83144_:()Lnet/minecraft/world/phys/shapes/VoxelShape;
+      35: aload_0
+      36: aload_1
+      37: getstatic     #183                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82695_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+      40: invokestatic  #226                // Method m_83148_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      43: getstatic     #371                // Field net/minecraft/world/phys/shapes/BooleanOp.f_82685_:Lnet/minecraft/world/phys/shapes/BooleanOp;
+      46: invokestatic  #393                // Method m_83157_:(Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/VoxelShape;Lnet/minecraft/world/phys/shapes/BooleanOp;)Z
+      49: ifne          56
+      52: iconst_1
+      53: goto          57
+      56: iconst_0
+      57: ireturn
+
+  protected static net.minecraft.world.phys.shapes.IndexMerger m_83058_(int, it.unimi.dsi.fastutil.doubles.DoubleList, it.unimi.dsi.fastutil.doubles.DoubleList, boolean, boolean);
+    Code:
+       0: aload_1
+       1: invokeinterface #412,  1          // InterfaceMethod it/unimi/dsi/fastutil/doubles/DoubleList.size:()I
+       6: iconst_1
+       7: isub
+       8: istore        5
+      10: aload_2
+      11: invokeinterface #412,  1          // InterfaceMethod it/unimi/dsi/fastutil/doubles/DoubleList.size:()I
+      16: iconst_1
+      17: isub
+      18: istore        6
+      20: aload_1
+      21: instanceof    #414                // class net/minecraft/world/phys/shapes/CubePointRange
+      24: ifeq          67
+      27: aload_2
+      28: instanceof    #414                // class net/minecraft/world/phys/shapes/CubePointRange
+      31: ifeq          67
+      34: iload         5
+      36: iload         6
+      38: invokestatic  #416                // Method m_83055_:(II)J
+      41: lstore        7
+      43: iload_0
+      44: i2l
+      45: lload         7
+      47: lmul
+      48: ldc2_w        #417                // long 256l
+      51: lcmp
+      52: ifgt          67
+      55: new           #274                // class net/minecraft/world/phys/shapes/DiscreteCubeMerger
+      58: dup
+      59: iload         5
+      61: iload         6
+      63: invokespecial #421                // Method net/minecraft/world/phys/shapes/DiscreteCubeMerger."<init>":(II)V
+      66: areturn
+      67: aload_1
+      68: iload         5
+      70: invokeinterface #425,  2          // InterfaceMethod it/unimi/dsi/fastutil/doubles/DoubleList.getDouble:(I)D
+      75: aload_2
+      76: iconst_0
+      77: invokeinterface #425,  2          // InterfaceMethod it/unimi/dsi/fastutil/doubles/DoubleList.getDouble:(I)D
+      82: ldc2_w        #29                 // double 1.0E-7d
+      85: dsub
+      86: dcmpg
+      87: ifge          101
+      90: new           #427                // class net/minecraft/world/phys/shapes/NonOverlappingMerger
+      93: dup
+      94: aload_1
+      95: aload_2
+      96: iconst_0
+      97: invokespecial #430                // Method net/minecraft/world/phys/shapes/NonOverlappingMerger."<init>":(Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;Z)V
+     100: areturn
+     101: aload_2
+     102: iload         6
+     104: invokeinterface #425,  2          // InterfaceMethod it/unimi/dsi/fastutil/doubles/DoubleList.getDouble:(I)D
+     109: aload_1
+     110: iconst_0
+     111: invokeinterface #425,  2          // InterfaceMethod it/unimi/dsi/fastutil/doubles/DoubleList.getDouble:(I)D
+     116: ldc2_w        #29                 // double 1.0E-7d
+     119: dsub
+     120: dcmpg
+     121: ifge          135
+     124: new           #427                // class net/minecraft/world/phys/shapes/NonOverlappingMerger
+     127: dup
+     128: aload_2
+     129: aload_1
+     130: iconst_1
+     131: invokespecial #430                // Method net/minecraft/world/phys/shapes/NonOverlappingMerger."<init>":(Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;Z)V
+     134: areturn
+     135: iload         5
+     137: iload         6
+     139: if_icmpne     159
+     142: aload_1
+     143: aload_2
+     144: invokestatic  #436                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+     147: ifeq          159
+     150: new           #438                // class net/minecraft/world/phys/shapes/IdenticalMerger
+     153: dup
+     154: aload_1
+     155: invokespecial #441                // Method net/minecraft/world/phys/shapes/IdenticalMerger."<init>":(Lit/unimi/dsi/fastutil/doubles/DoubleList;)V
+     158: areturn
+     159: new           #443                // class net/minecraft/world/phys/shapes/IndirectMerger
+     162: dup
+     163: aload_1
+     164: aload_2
+     165: iload_3
+     166: iload         4
+     168: invokespecial #446                // Method net/minecraft/world/phys/shapes/IndirectMerger."<init>":(Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;ZZ)V
+     171: areturn
+
+  private static boolean m_83094_(net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.BooleanOp, net.minecraft.world.phys.shapes.DiscreteVoxelShape, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: aload_3
+       4: iload         5
+       6: aload         4
+       8: iload         6
+      10: invokedynamic #461,  0            // InvokeDynamic #2:m_82908_:(Lnet/minecraft/world/phys/shapes/IndexMerger;Lnet/minecraft/world/phys/shapes/BooleanOp;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;ILnet/minecraft/world/phys/shapes/DiscreteVoxelShape;I)Lnet/minecraft/world/phys/shapes/IndexMerger$IndexConsumer;
+      15: invokeinterface #320,  2          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.m_6200_:(Lnet/minecraft/world/phys/shapes/IndexMerger$IndexConsumer;)Z
+      20: ireturn
+
+  private static boolean m_166039_(net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.BooleanOp, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iload_3
+       4: iload         6
+       6: aload         4
+       8: iload         5
+      10: iload         7
+      12: invokedynamic #477,  0            // InvokeDynamic #3:m_82908_:(Lnet/minecraft/world/phys/shapes/BooleanOp;Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;IILnet/minecraft/world/phys/shapes/DiscreteVoxelShape;II)Lnet/minecraft/world/phys/shapes/IndexMerger$IndexConsumer;
+      17: invokeinterface #320,  2          // InterfaceMethod net/minecraft/world/phys/shapes/IndexMerger.m_6200_:(Lnet/minecraft/world/phys/shapes/IndexMerger$IndexConsumer;)Z
+      22: ireturn
+
+  private static boolean m_166028_(net.minecraft.world.phys.shapes.BooleanOp, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, int, int, int);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: iload_3
+       4: iload         7
+       6: invokevirtual #489                // Method net/minecraft/world/phys/shapes/DiscreteVoxelShape.m_82846_:(III)Z
+       9: aload         4
+      11: iload         5
+      13: iload         6
+      15: iload         8
+      17: invokevirtual #489                // Method net/minecraft/world/phys/shapes/DiscreteVoxelShape.m_82846_:(III)Z
+      20: invokeinterface #236,  3          // InterfaceMethod net/minecraft/world/phys/shapes/BooleanOp.m_82701_:(ZZ)Z
+      25: ifne          32
+      28: iconst_1
+      29: goto          33
+      32: iconst_0
+      33: ireturn
+
+  private static net.minecraft.world.phys.shapes.CubeVoxelShape m_83156_();
+    Code:
+       0: new           #101                // class net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape
+       3: dup
+       4: iconst_1
+       5: iconst_1
+       6: iconst_1
+       7: invokespecial #504                // Method net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape."<init>":(III)V
+      10: astore_0
+      11: aload_0
+      12: iconst_0
+      13: iconst_0
+      14: iconst_0
+      15: invokevirtual #507                // Method net/minecraft/world/phys/shapes/DiscreteVoxelShape.m_142703_:(III)V
+      18: new           #107                // class net/minecraft/world/phys/shapes/CubeVoxelShape
+      21: dup
+      22: aload_0
+      23: invokespecial #110                // Method net/minecraft/world/phys/shapes/CubeVoxelShape."<init>":(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;)V
+      26: areturn
+
+  static {};
+    Code:
+       0: invokedynamic #518,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+       5: invokestatic  #522                // Method net/minecraft/Util.m_137537_:(Ljava/util/function/Supplier;)Ljava/lang/Object;
+       8: checkcast     #78                 // class net/minecraft/world/phys/shapes/VoxelShape
+      11: putstatic     #50                 // Field f_83037_:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      14: ldc2_w        #523                // double -Infinityd
+      17: ldc2_w        #523                // double -Infinityd
+      20: ldc2_w        #523                // double -Infinityd
+      23: ldc2_w        #525                // double Infinityd
+      26: ldc2_w        #525                // double Infinityd
+      29: ldc2_w        #525                // double Infinityd
+      32: invokestatic  #528                // Method m_83048_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      35: putstatic     #530                // Field f_83036_:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      38: new           #76                 // class net/minecraft/world/phys/shapes/ArrayVoxelShape
+      41: dup
+      42: new           #101                // class net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape
+      45: dup
+      46: iconst_0
+      47: iconst_0
+      48: iconst_0
+      49: invokespecial #504                // Method net/minecraft/world/phys/shapes/BitSetDiscreteVoxelShape."<init>":(III)V
+      52: new           #84                 // class it/unimi/dsi/fastutil/doubles/DoubleArrayList
+      55: dup
+      56: iconst_1
+      57: newarray       double
+      59: dup
+      60: iconst_0
+      61: dconst_0
+      62: dastore
+      63: invokespecial #533                // Method it/unimi/dsi/fastutil/doubles/DoubleArrayList."<init>":([D)V
+      66: new           #84                 // class it/unimi/dsi/fastutil/doubles/DoubleArrayList
+      69: dup
+      70: iconst_1
+      71: newarray       double
+      73: dup
+      74: iconst_0
+      75: dconst_0
+      76: dastore
+      77: invokespecial #533                // Method it/unimi/dsi/fastutil/doubles/DoubleArrayList."<init>":([D)V
+      80: new           #84                 // class it/unimi/dsi/fastutil/doubles/DoubleArrayList
+      83: dup
+      84: iconst_1
+      85: newarray       double
+      87: dup
+      88: iconst_0
+      89: dconst_0
+      90: dastore
+      91: invokespecial #533                // Method it/unimi/dsi/fastutil/doubles/DoubleArrayList."<init>":([D)V
+      94: invokespecial #91                 // Method net/minecraft/world/phys/shapes/ArrayVoxelShape."<init>":(Lnet/minecraft/world/phys/shapes/DiscreteVoxelShape;Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;Lit/unimi/dsi/fastutil/doubles/DoubleList;)V
+      97: putstatic     #47                 // Field f_83038_:Lnet/minecraft/world/phys/shapes/VoxelShape;
+     100: return
+}

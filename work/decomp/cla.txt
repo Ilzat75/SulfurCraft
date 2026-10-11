@@ -1,0 +1,10 @@
+﻿Compiled from "ContainerLevelAccess.java"
+public interface net.minecraft.world.inventory.ContainerLevelAccess {
+  public static final net.minecraft.world.inventory.ContainerLevelAccess f_39287_;
+  public static net.minecraft.world.inventory.ContainerLevelAccess m_39289_(net.minecraft.world.level.Level, net.minecraft.core.BlockPos);
+  public abstract <T> java.util.Optional<T> m_6721_(java.util.function.BiFunction<net.minecraft.world.level.Level, net.minecraft.core.BlockPos, T>);
+  public default <T> T m_39299_(java.util.function.BiFunction<net.minecraft.world.level.Level, net.minecraft.core.BlockPos, T>, T);
+  public default void m_39292_(java.util.function.BiConsumer<net.minecraft.world.level.Level, net.minecraft.core.BlockPos>);
+  private static java.util.Optional m_39294_(java.util.function.BiConsumer, net.minecraft.world.level.Level, net.minecraft.core.BlockPos);
+  static {};
+}

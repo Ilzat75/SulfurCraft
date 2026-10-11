@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "yourmod:block/sunflower_stage0"
+    },
+    "age=1": {
+      "model": "yourmod:block/sunflower_stage1"
+    },
+    "age=2,half=lower": {
+      "model": "yourmod:block/sunflower_stage2_lower"
+    },
+    "age=2,half=upper": {
+      "model": "yourmod:block/sunflower_stage2_upper"
+    },
+    "age=3,half=lower": {
+      "model": "yourmod:block/sunflower_stage3_lower"
+    },
+    "age=3,half=upper": {
+      "model": "yourmod:block/sunflower_stage3_upper"
+    }
+  }
+}

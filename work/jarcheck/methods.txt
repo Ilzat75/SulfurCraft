@@ -1,0 +1,159 @@
+﻿Compiled from "SulfurCraft.java"
+public class sulfurcraft.SulfurCraft$SunflowerCropBlock extends net.minecraft.world.level.block.DoublePlantBlock implements net.minecraft.world.level.block.BonemealableBlock {
+  private static final net.minecraft.world.phys.shapes.VoxelShape SPROUT_SHAPE;
+
+  private static final net.minecraft.world.phys.shapes.VoxelShape TALL_SHAPE;
+
+  public sulfurcraft.SulfurCraft$SunflowerCropBlock(net.minecraft.world.level.block.state.BlockBehaviour$Properties);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #1                  // Method net/minecraft/world/level/block/DoublePlantBlock."<init>":(Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;)V
+       5: aload_0
+       6: aload_0
+       7: invokevirtual #7                  // Method m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+      10: getstatic     #13                 // Field sulfurcraft/SulfurCraft.SUNFLOWER_AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+      13: iconst_0
+      14: invokestatic  #19                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      17: invokevirtual #25                 // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      20: checkcast     #26                 // class net/minecraft/world/level/block/state/BlockState
+      23: getstatic     #31                 // Field net/minecraft/world/level/block/DoublePlantBlock.f_52858_:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+      26: getstatic     #35                 // Field net/minecraft/world/level/block/state/properties/DoubleBlockHalf.LOWER:Lnet/minecraft/world/level/block/state/properties/DoubleBlockHalf;
+      29: invokevirtual #25                 // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      32: checkcast     #26                 // class net/minecraft/world/level/block/state/BlockState
+      35: invokevirtual #41                 // Method m_49959_:(Lnet/minecraft/world/level/block/state/BlockState;)V
+      38: return
+
+  protected void m_7926_(net.minecraft.world.level.block.state.StateDefinition$Builder<net.minecraft.world.level.block.Block, net.minecraft.world.level.block.state.BlockState>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokespecial #45                 // Method net/minecraft/world/level/block/DoublePlantBlock.m_7926_:(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V
+       5: aload_1
+       6: iconst_1
+       7: anewarray     #49                 // class net/minecraft/world/level/block/state/properties/Property
+      10: dup
+      11: iconst_0
+      12: getstatic     #13                 // Field sulfurcraft/SulfurCraft.SUNFLOWER_AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+      15: aastore
+      16: invokevirtual #51                 // Method net/minecraft/world/level/block/state/StateDefinition$Builder.m_61104_:([Lnet/minecraft/world/level/block/state/properties/Property;)Lnet/minecraft/world/level/block/state/StateDefinition$Builder;
+      19: pop
+      20: return
+
+  public net.minecraft.world.level.block.state.BlockState m_5573_(net.minecraft.world.item.context.BlockPlaceContext);
+    Code:
+       0: aload_0
+       1: invokevirtual #7                  // Method m_49966_:()Lnet/minecraft/world/level/block/state/BlockState;
+       4: getstatic     #13                 // Field sulfurcraft/SulfurCraft.SUNFLOWER_AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+       7: iconst_0
+       8: invokestatic  #19                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      11: invokevirtual #25                 // Method net/minecraft/world/level/block/state/BlockState.m_61124_:(Lnet/minecraft/world/level/block/state/properties/Property;Ljava/lang/Comparable;)Ljava/lang/Object;
+      14: checkcast     #26                 // class net/minecraft/world/level/block/state/BlockState
+      17: areturn
+
+  public void m_6402_(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.world.entity.LivingEntity, net.minecraft.world.item.ItemStack);
+    Code:
+       0: return
+
+  protected boolean m_6266_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos);
+    Code:
+       0: aload_2
+       1: aload_3
+       2: invokevirtual #57                 // Method net/minecraft/core/BlockPos.m_7495_:()Lnet/minecraft/core/BlockPos;
+       5: invokeinterface #63,  2           // InterfaceMethod net/minecraft/world/level/LevelReader.m_8055_:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;
+      10: getstatic     #69                 // Field net/minecraft/world/level/block/Blocks.f_50064_:Lnet/minecraft/world/level/block/Block;
+      13: invokevirtual #75                 // Method net/minecraft/world/level/block/state/BlockState.m_60713_:(Lnet/minecraft/world/level/block/Block;)Z
+      16: ireturn
+
+  public boolean m_6724_(net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: iconst_1
+       1: ireturn
+
+  public void m_213898_(net.minecraft.world.level.block.state.BlockState, net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, net.minecraft.util.RandomSource);
+    Code:
+       0: aload_1
+       1: getstatic     #31                 // Field net/minecraft/world/level/block/DoublePlantBlock.f_52858_:Lnet/minecraft/world/level/block/state/properties/EnumProperty;
+       4: invokevirtual #79                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       7: getstatic     #83                 // Field net/minecraft/world/level/block/state/properties/DoubleBlockHalf.UPPER:Lnet/minecraft/world/level/block/state/properties/DoubleBlockHalf;
+      10: if_acmpne     14
+      13: return
+      14: aload_2
+      15: aload_3
+      16: aload_1
+      17: aload         4
+      19: iconst_1
+      20: invokestatic  #86                 // Method sulfurcraft/SulfurCraft.growSunflower:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/util/RandomSource;Z)V
+      23: return
+
+  public boolean m_7370_(net.minecraft.world.level.LevelReader, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, boolean);
+    Code:
+       0: aload_3
+       1: getstatic     #13                 // Field sulfurcraft/SulfurCraft.SUNFLOWER_AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+       4: invokevirtual #79                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       7: checkcast     #20                 // class java/lang/Integer
+      10: invokevirtual #90                 // Method java/lang/Integer.intValue:()I
+      13: iconst_3
+      14: if_icmpge     21
+      17: iconst_1
+      18: goto          22
+      21: iconst_0
+      22: ireturn
+
+  public boolean m_214167_(net.minecraft.world.level.Level, net.minecraft.util.RandomSource, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload         4
+       2: getstatic     #13                 // Field sulfurcraft/SulfurCraft.SUNFLOWER_AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+       5: invokevirtual #79                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       8: checkcast     #20                 // class java/lang/Integer
+      11: invokevirtual #90                 // Method java/lang/Integer.intValue:()I
+      14: iconst_3
+      15: if_icmpge     22
+      18: iconst_1
+      19: goto          23
+      22: iconst_0
+      23: ireturn
+
+  public void m_214148_(net.minecraft.server.level.ServerLevel, net.minecraft.util.RandomSource, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+    Code:
+       0: aload_1
+       1: aload_3
+       2: aload         4
+       4: aload_2
+       5: iconst_0
+       6: invokestatic  #86                 // Method sulfurcraft/SulfurCraft.growSunflower:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/util/RandomSource;Z)V
+       9: return
+
+  public net.minecraft.world.phys.shapes.VoxelShape m_5940_(net.minecraft.world.level.block.state.BlockState, net.minecraft.world.level.BlockGetter, net.minecraft.core.BlockPos, net.minecraft.world.phys.shapes.CollisionContext);
+    Code:
+       0: aload_1
+       1: getstatic     #13                 // Field sulfurcraft/SulfurCraft.SUNFLOWER_AGE:Lnet/minecraft/world/level/block/state/properties/IntegerProperty;
+       4: invokevirtual #79                 // Method net/minecraft/world/level/block/state/BlockState.m_61143_:(Lnet/minecraft/world/level/block/state/properties/Property;)Ljava/lang/Comparable;
+       7: checkcast     #20                 // class java/lang/Integer
+      10: invokevirtual #90                 // Method java/lang/Integer.intValue:()I
+      13: ifne          20
+      16: getstatic     #94                 // Field SPROUT_SHAPE:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      19: areturn
+      20: getstatic     #98                 // Field TALL_SHAPE:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      23: areturn
+
+  static {};
+    Code:
+       0: ldc2_w        #101                // double 5.0d
+       3: dconst_0
+       4: ldc2_w        #101                // double 5.0d
+       7: ldc2_w        #103                // double 11.0d
+      10: ldc2_w        #105                // double 6.0d
+      13: ldc2_w        #103                // double 11.0d
+      16: invokestatic  #107                // Method net/minecraft/world/phys/shapes/Shapes.m_83048_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      19: putstatic     #94                 // Field SPROUT_SHAPE:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      22: ldc2_w        #101                // double 5.0d
+      25: dconst_0
+      26: ldc2_w        #101                // double 5.0d
+      29: ldc2_w        #103                // double 11.0d
+      32: ldc2_w        #113                // double 16.0d
+      35: ldc2_w        #103                // double 11.0d
+      38: invokestatic  #107                // Method net/minecraft/world/phys/shapes/Shapes.m_83048_:(DDDDDD)Lnet/minecraft/world/phys/shapes/VoxelShape;
+      41: putstatic     #98                 // Field TALL_SHAPE:Lnet/minecraft/world/phys/shapes/VoxelShape;
+      44: return
+}

@@ -1,0 +1,231 @@
+Compiled from "MobSpawnType.java"
+public final class net.minecraft.world.entity.MobSpawnType extends java.lang.Enum<net.minecraft.world.entity.MobSpawnType> {
+  public static final net.minecraft.world.entity.MobSpawnType NATURAL;
+
+  public static final net.minecraft.world.entity.MobSpawnType CHUNK_GENERATION;
+
+  public static final net.minecraft.world.entity.MobSpawnType SPAWNER;
+
+  public static final net.minecraft.world.entity.MobSpawnType STRUCTURE;
+
+  public static final net.minecraft.world.entity.MobSpawnType BREEDING;
+
+  public static final net.minecraft.world.entity.MobSpawnType MOB_SUMMONED;
+
+  public static final net.minecraft.world.entity.MobSpawnType JOCKEY;
+
+  public static final net.minecraft.world.entity.MobSpawnType EVENT;
+
+  public static final net.minecraft.world.entity.MobSpawnType CONVERSION;
+
+  public static final net.minecraft.world.entity.MobSpawnType REINFORCEMENT;
+
+  public static final net.minecraft.world.entity.MobSpawnType TRIGGERED;
+
+  public static final net.minecraft.world.entity.MobSpawnType BUCKET;
+
+  public static final net.minecraft.world.entity.MobSpawnType SPAWN_EGG;
+
+  public static final net.minecraft.world.entity.MobSpawnType COMMAND;
+
+  public static final net.minecraft.world.entity.MobSpawnType DISPENSER;
+
+  public static final net.minecraft.world.entity.MobSpawnType PATROL;
+
+  private static final net.minecraft.world.entity.MobSpawnType[] $VALUES;
+
+  public static net.minecraft.world.entity.MobSpawnType[] values();
+    Code:
+       0: getstatic     #29                 // Field $VALUES:[Lnet/minecraft/world/entity/MobSpawnType;
+       3: invokevirtual #34                 // Method "[Lnet/minecraft/world/entity/MobSpawnType;".clone:()Ljava/lang/Object;
+       6: checkcast     #30                 // class "[Lnet/minecraft/world/entity/MobSpawnType;"
+       9: areturn
+
+  public static net.minecraft.world.entity.MobSpawnType valueOf(java.lang.String);
+    Code:
+       0: ldc           #2                  // class net/minecraft/world/entity/MobSpawnType
+       2: aload_0
+       3: invokestatic  #39                 // Method java/lang/Enum.valueOf:(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+       6: checkcast     #2                  // class net/minecraft/world/entity/MobSpawnType
+       9: areturn
+
+  private net.minecraft.world.entity.MobSpawnType();
+    Code:
+       0: aload_0
+       1: aload_1
+       2: iload_2
+       3: invokespecial #46                 // Method java/lang/Enum."<init>":(Ljava/lang/String;I)V
+       6: return
+
+  private static net.minecraft.world.entity.MobSpawnType[] m_147276_();
+    Code:
+       0: bipush        16
+       2: anewarray     #2                  // class net/minecraft/world/entity/MobSpawnType
+       5: dup
+       6: iconst_0
+       7: getstatic     #50                 // Field NATURAL:Lnet/minecraft/world/entity/MobSpawnType;
+      10: aastore
+      11: dup
+      12: iconst_1
+      13: getstatic     #52                 // Field CHUNK_GENERATION:Lnet/minecraft/world/entity/MobSpawnType;
+      16: aastore
+      17: dup
+      18: iconst_2
+      19: getstatic     #54                 // Field SPAWNER:Lnet/minecraft/world/entity/MobSpawnType;
+      22: aastore
+      23: dup
+      24: iconst_3
+      25: getstatic     #56                 // Field STRUCTURE:Lnet/minecraft/world/entity/MobSpawnType;
+      28: aastore
+      29: dup
+      30: iconst_4
+      31: getstatic     #58                 // Field BREEDING:Lnet/minecraft/world/entity/MobSpawnType;
+      34: aastore
+      35: dup
+      36: iconst_5
+      37: getstatic     #60                 // Field MOB_SUMMONED:Lnet/minecraft/world/entity/MobSpawnType;
+      40: aastore
+      41: dup
+      42: bipush        6
+      44: getstatic     #62                 // Field JOCKEY:Lnet/minecraft/world/entity/MobSpawnType;
+      47: aastore
+      48: dup
+      49: bipush        7
+      51: getstatic     #64                 // Field EVENT:Lnet/minecraft/world/entity/MobSpawnType;
+      54: aastore
+      55: dup
+      56: bipush        8
+      58: getstatic     #66                 // Field CONVERSION:Lnet/minecraft/world/entity/MobSpawnType;
+      61: aastore
+      62: dup
+      63: bipush        9
+      65: getstatic     #68                 // Field REINFORCEMENT:Lnet/minecraft/world/entity/MobSpawnType;
+      68: aastore
+      69: dup
+      70: bipush        10
+      72: getstatic     #70                 // Field TRIGGERED:Lnet/minecraft/world/entity/MobSpawnType;
+      75: aastore
+      76: dup
+      77: bipush        11
+      79: getstatic     #72                 // Field BUCKET:Lnet/minecraft/world/entity/MobSpawnType;
+      82: aastore
+      83: dup
+      84: bipush        12
+      86: getstatic     #74                 // Field SPAWN_EGG:Lnet/minecraft/world/entity/MobSpawnType;
+      89: aastore
+      90: dup
+      91: bipush        13
+      93: getstatic     #76                 // Field COMMAND:Lnet/minecraft/world/entity/MobSpawnType;
+      96: aastore
+      97: dup
+      98: bipush        14
+     100: getstatic     #78                 // Field DISPENSER:Lnet/minecraft/world/entity/MobSpawnType;
+     103: aastore
+     104: dup
+     105: bipush        15
+     107: getstatic     #80                 // Field PATROL:Lnet/minecraft/world/entity/MobSpawnType;
+     110: aastore
+     111: areturn
+
+  static {};
+    Code:
+       0: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+       3: dup
+       4: ldc           #82                 // String NATURAL
+       6: iconst_0
+       7: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      10: putstatic     #50                 // Field NATURAL:Lnet/minecraft/world/entity/MobSpawnType;
+      13: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      16: dup
+      17: ldc           #84                 // String CHUNK_GENERATION
+      19: iconst_1
+      20: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      23: putstatic     #52                 // Field CHUNK_GENERATION:Lnet/minecraft/world/entity/MobSpawnType;
+      26: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      29: dup
+      30: ldc           #85                 // String SPAWNER
+      32: iconst_2
+      33: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      36: putstatic     #54                 // Field SPAWNER:Lnet/minecraft/world/entity/MobSpawnType;
+      39: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      42: dup
+      43: ldc           #86                 // String STRUCTURE
+      45: iconst_3
+      46: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      49: putstatic     #56                 // Field STRUCTURE:Lnet/minecraft/world/entity/MobSpawnType;
+      52: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      55: dup
+      56: ldc           #87                 // String BREEDING
+      58: iconst_4
+      59: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      62: putstatic     #58                 // Field BREEDING:Lnet/minecraft/world/entity/MobSpawnType;
+      65: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      68: dup
+      69: ldc           #88                 // String MOB_SUMMONED
+      71: iconst_5
+      72: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      75: putstatic     #60                 // Field MOB_SUMMONED:Lnet/minecraft/world/entity/MobSpawnType;
+      78: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      81: dup
+      82: ldc           #89                 // String JOCKEY
+      84: bipush        6
+      86: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+      89: putstatic     #62                 // Field JOCKEY:Lnet/minecraft/world/entity/MobSpawnType;
+      92: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+      95: dup
+      96: ldc           #90                 // String EVENT
+      98: bipush        7
+     100: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     103: putstatic     #64                 // Field EVENT:Lnet/minecraft/world/entity/MobSpawnType;
+     106: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     109: dup
+     110: ldc           #91                 // String CONVERSION
+     112: bipush        8
+     114: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     117: putstatic     #66                 // Field CONVERSION:Lnet/minecraft/world/entity/MobSpawnType;
+     120: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     123: dup
+     124: ldc           #92                 // String REINFORCEMENT
+     126: bipush        9
+     128: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     131: putstatic     #68                 // Field REINFORCEMENT:Lnet/minecraft/world/entity/MobSpawnType;
+     134: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     137: dup
+     138: ldc           #93                 // String TRIGGERED
+     140: bipush        10
+     142: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     145: putstatic     #70                 // Field TRIGGERED:Lnet/minecraft/world/entity/MobSpawnType;
+     148: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     151: dup
+     152: ldc           #94                 // String BUCKET
+     154: bipush        11
+     156: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     159: putstatic     #72                 // Field BUCKET:Lnet/minecraft/world/entity/MobSpawnType;
+     162: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     165: dup
+     166: ldc           #95                 // String SPAWN_EGG
+     168: bipush        12
+     170: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     173: putstatic     #74                 // Field SPAWN_EGG:Lnet/minecraft/world/entity/MobSpawnType;
+     176: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     179: dup
+     180: ldc           #96                 // String COMMAND
+     182: bipush        13
+     184: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     187: putstatic     #76                 // Field COMMAND:Lnet/minecraft/world/entity/MobSpawnType;
+     190: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     193: dup
+     194: ldc           #97                 // String DISPENSER
+     196: bipush        14
+     198: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     201: putstatic     #78                 // Field DISPENSER:Lnet/minecraft/world/entity/MobSpawnType;
+     204: new           #2                  // class net/minecraft/world/entity/MobSpawnType
+     207: dup
+     208: ldc           #98                 // String PATROL
+     210: bipush        15
+     212: invokespecial #83                 // Method "<init>":(Ljava/lang/String;I)V
+     215: putstatic     #80                 // Field PATROL:Lnet/minecraft/world/entity/MobSpawnType;
+     218: invokestatic  #100                // Method m_147276_:()[Lnet/minecraft/world/entity/MobSpawnType;
+     221: putstatic     #29                 // Field $VALUES:[Lnet/minecraft/world/entity/MobSpawnType;
+     224: return
+}

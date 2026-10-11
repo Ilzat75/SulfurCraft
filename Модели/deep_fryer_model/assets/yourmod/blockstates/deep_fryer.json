@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "yourmod:block/deep_fryer"
+    },
+    "facing=east": {
+      "model": "yourmod:block/deep_fryer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "yourmod:block/deep_fryer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "yourmod:block/deep_fryer",
+      "y": 270
+    }
+  }
+}

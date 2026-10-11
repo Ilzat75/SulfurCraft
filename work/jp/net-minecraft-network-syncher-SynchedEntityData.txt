@@ -1,0 +1,539 @@
+Compiled from "SynchedEntityData.java"
+public class net.minecraft.network.syncher.SynchedEntityData {
+  private static final org.slf4j.Logger f_135342_;
+
+  private static final it.unimi.dsi.fastutil.objects.Object2IntMap<java.lang.Class<? extends net.minecraft.world.entity.Entity>> f_135343_;
+
+  private static final int f_179843_;
+
+  private final net.minecraft.world.entity.Entity f_135344_;
+
+  private final it.unimi.dsi.fastutil.ints.Int2ObjectMap<net.minecraft.network.syncher.SynchedEntityData$DataItem<?>> f_135345_;
+
+  private final java.util.concurrent.locks.ReadWriteLock f_135346_;
+
+  private boolean f_135348_;
+
+  public net.minecraft.network.syncher.SynchedEntityData(net.minecraft.world.entity.Entity);
+    Code:
+       0: aload_0
+       1: invokespecial #38                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: new           #40                 // class it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap
+       8: dup
+       9: invokespecial #41                 // Method it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap."<init>":()V
+      12: putfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      15: aload_0
+      16: new           #45                 // class java/util/concurrent/locks/ReentrantReadWriteLock
+      19: dup
+      20: invokespecial #46                 // Method java/util/concurrent/locks/ReentrantReadWriteLock."<init>":()V
+      23: putfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      26: aload_0
+      27: aload_1
+      28: putfield      #50                 // Field f_135344_:Lnet/minecraft/world/entity/Entity;
+      31: return
+
+  public static <T> net.minecraft.network.syncher.EntityDataAccessor<T> m_135353_(java.lang.Class<? extends net.minecraft.world.entity.Entity>, net.minecraft.network.syncher.EntityDataSerializer<T>);
+    Code:
+       0: invokestatic  #64                 // Method java/lang/Thread.currentThread:()Ljava/lang/Thread;
+       3: invokevirtual #68                 // Method java/lang/Thread.getStackTrace:()[Ljava/lang/StackTraceElement;
+       6: iconst_2
+       7: aaload
+       8: invokevirtual #74                 // Method java/lang/StackTraceElement.getClassName:()Ljava/lang/String;
+      11: invokestatic  #80                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+      14: astore_2
+      15: aload_2
+      16: aload_0
+      17: invokevirtual #84                 // Method java/lang/Object.equals:(Ljava/lang/Object;)Z
+      20: ifne          81
+      23: getstatic     #86                 // Field f_135342_:Lorg/slf4j/Logger;
+      26: invokeinterface #92,  1           // InterfaceMethod org/slf4j/Logger.isDebugEnabled:()Z
+      31: ifeq          69
+      34: getstatic     #86                 // Field f_135342_:Lorg/slf4j/Logger;
+      37: ldc           #94                 // String defineId called for: {} from {}
+      39: iconst_3
+      40: anewarray     #4                  // class java/lang/Object
+      43: dup
+      44: iconst_0
+      45: aload_0
+      46: aastore
+      47: dup
+      48: iconst_1
+      49: aload_2
+      50: aastore
+      51: dup
+      52: iconst_2
+      53: new           #96                 // class java/lang/RuntimeException
+      56: dup
+      57: invokespecial #97                 // Method java/lang/RuntimeException."<init>":()V
+      60: aastore
+      61: invokeinterface #101,  3          // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;[Ljava/lang/Object;)V
+      66: goto          81
+      69: getstatic     #86                 // Field f_135342_:Lorg/slf4j/Logger;
+      72: ldc           #94                 // String defineId called for: {} from {}
+      74: aload_0
+      75: aload_2
+      76: invokeinterface #104,  4          // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
+      81: goto          85
+      84: astore_2
+      85: getstatic     #106                // Field f_135343_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+      88: aload_0
+      89: invokeinterface #111,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/Object2IntMap.containsKey:(Ljava/lang/Object;)Z
+      94: ifeq          112
+      97: getstatic     #106                // Field f_135343_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+     100: aload_0
+     101: invokeinterface #115,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/Object2IntMap.getInt:(Ljava/lang/Object;)I
+     106: iconst_1
+     107: iadd
+     108: istore_2
+     109: goto          162
+     112: iconst_0
+     113: istore_3
+     114: aload_0
+     115: astore        4
+     117: aload         4
+     119: ldc           #117                // class net/minecraft/world/entity/Entity
+     121: if_acmpeq     160
+     124: aload         4
+     126: invokevirtual #121                // Method java/lang/Class.getSuperclass:()Ljava/lang/Class;
+     129: astore        4
+     131: getstatic     #106                // Field f_135343_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+     134: aload         4
+     136: invokeinterface #111,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/Object2IntMap.containsKey:(Ljava/lang/Object;)Z
+     141: ifeq          117
+     144: getstatic     #106                // Field f_135343_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+     147: aload         4
+     149: invokeinterface #115,  2          // InterfaceMethod it/unimi/dsi/fastutil/objects/Object2IntMap.getInt:(Ljava/lang/Object;)I
+     154: iconst_1
+     155: iadd
+     156: istore_3
+     157: goto          160
+     160: iload_3
+     161: istore_2
+     162: iload_2
+     163: sipush        254
+     166: if_icmple     183
+     169: new           #125                // class java/lang/IllegalArgumentException
+     172: dup
+     173: iload_2
+     174: invokedynamic #137,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+     179: invokespecial #140                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     182: athrow
+     183: getstatic     #106                // Field f_135343_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+     186: aload_0
+     187: iload_2
+     188: invokeinterface #144,  3          // InterfaceMethod it/unimi/dsi/fastutil/objects/Object2IntMap.put:(Ljava/lang/Object;I)I
+     193: pop
+     194: aload_1
+     195: iload_2
+     196: invokeinterface #148,  2          // InterfaceMethod net/minecraft/network/syncher/EntityDataSerializer.m_135021_:(I)Lnet/minecraft/network/syncher/EntityDataAccessor;
+     201: areturn
+    Exception table:
+       from    to  target type
+           0    81    84   Class java/lang/ClassNotFoundException
+
+  public <T> void m_135372_(net.minecraft.network.syncher.EntityDataAccessor<T>, T);
+    Code:
+       0: aload_1
+       1: invokevirtual #168                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135015_:()I
+       4: istore_3
+       5: iload_3
+       6: sipush        254
+       9: if_icmple     26
+      12: new           #125                // class java/lang/IllegalArgumentException
+      15: dup
+      16: iload_3
+      17: invokedynamic #137,  0            // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+      22: invokespecial #140                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      25: athrow
+      26: aload_0
+      27: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      30: iload_3
+      31: invokeinterface #173,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.containsKey:(I)Z
+      36: ifeq          53
+      39: new           #125                // class java/lang/IllegalArgumentException
+      42: dup
+      43: iload_3
+      44: invokedynamic #176,  0            // InvokeDynamic #1:makeConcatWithConstants:(I)Ljava/lang/String;
+      49: invokespecial #140                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      52: athrow
+      53: aload_1
+      54: invokevirtual #180                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135016_:()Lnet/minecraft/network/syncher/EntityDataSerializer;
+      57: invokestatic  #186                // Method net/minecraft/network/syncher/EntityDataSerializers.m_135052_:(Lnet/minecraft/network/syncher/EntityDataSerializer;)I
+      60: ifge          81
+      63: new           #125                // class java/lang/IllegalArgumentException
+      66: dup
+      67: aload_1
+      68: invokevirtual #180                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135016_:()Lnet/minecraft/network/syncher/EntityDataSerializer;
+      71: iload_3
+      72: invokedynamic #191,  0            // InvokeDynamic #2:makeConcatWithConstants:(Lnet/minecraft/network/syncher/EntityDataSerializer;I)Ljava/lang/String;
+      77: invokespecial #140                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      80: athrow
+      81: aload_0
+      82: aload_1
+      83: aload_2
+      84: invokevirtual #194                // Method m_135385_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+      87: return
+
+  private <T> void m_135385_(net.minecraft.network.syncher.EntityDataAccessor<T>, T);
+    Code:
+       0: new           #9                  // class net/minecraft/network/syncher/SynchedEntityData$DataItem
+       3: dup
+       4: aload_1
+       5: aload_2
+       6: invokespecial #202                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem."<init>":(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;)V
+       9: astore_3
+      10: aload_0
+      11: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      14: invokeinterface #208,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.writeLock:()Ljava/util/concurrent/locks/Lock;
+      19: invokeinterface #213,  1          // InterfaceMethod java/util/concurrent/locks/Lock.lock:()V
+      24: aload_0
+      25: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      28: aload_1
+      29: invokevirtual #168                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135015_:()I
+      32: aload_3
+      33: invokeinterface #216,  3          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.put:(ILjava/lang/Object;)Ljava/lang/Object;
+      38: pop
+      39: aload_0
+      40: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      43: invokeinterface #208,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.writeLock:()Ljava/util/concurrent/locks/Lock;
+      48: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+      53: return
+
+  public <T> boolean m_285897_(net.minecraft.network.syncher.EntityDataAccessor<T>);
+    Code:
+       0: aload_0
+       1: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+       4: aload_1
+       5: invokevirtual #168                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135015_:()I
+       8: invokeinterface #173,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.containsKey:(I)Z
+      13: ireturn
+
+  private <T> net.minecraft.network.syncher.SynchedEntityData$DataItem<T> m_135379_(net.minecraft.network.syncher.EntityDataAccessor<T>);
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+       4: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+       9: invokeinterface #213,  1          // InterfaceMethod java/util/concurrent/locks/Lock.lock:()V
+      14: aload_0
+      15: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      18: aload_1
+      19: invokevirtual #168                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135015_:()I
+      22: invokeinterface #240,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.get:(I)Ljava/lang/Object;
+      27: checkcast     #9                  // class net/minecraft/network/syncher/SynchedEntityData$DataItem
+      30: astore_2
+      31: aload_0
+      32: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      35: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+      40: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+      45: goto          105
+      48: astore_3
+      49: aload_3
+      50: ldc           #242                // String Getting synched entity data
+      52: invokestatic  #248                // Method net/minecraft/CrashReport.m_127521_:(Ljava/lang/Throwable;Ljava/lang/String;)Lnet/minecraft/CrashReport;
+      55: astore        4
+      57: aload         4
+      59: ldc           #250                // String Synched entity data
+      61: invokevirtual #254                // Method net/minecraft/CrashReport.m_127514_:(Ljava/lang/String;)Lnet/minecraft/CrashReportCategory;
+      64: astore        5
+      66: aload         5
+      68: ldc_w         #256                // String Data ID
+      71: aload_1
+      72: invokevirtual #262                // Method net/minecraft/CrashReportCategory.m_128159_:(Ljava/lang/String;Ljava/lang/Object;)Lnet/minecraft/CrashReportCategory;
+      75: pop
+      76: new           #264                // class net/minecraft/ReportedException
+      79: dup
+      80: aload         4
+      82: invokespecial #267                // Method net/minecraft/ReportedException."<init>":(Lnet/minecraft/CrashReport;)V
+      85: athrow
+      86: astore        6
+      88: aload_0
+      89: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      92: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+      97: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+     102: aload         6
+     104: athrow
+     105: aload_2
+     106: areturn
+    Exception table:
+       from    to  target type
+          14    31    48   Class java/lang/Throwable
+          14    31    86   any
+          48    88    86   any
+
+  public <T> T m_135370_(net.minecraft.network.syncher.EntityDataAccessor<T>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #279                // Method m_135379_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;
+       5: invokevirtual #283                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135403_:()Ljava/lang/Object;
+       8: areturn
+
+  public <T> void m_135381_(net.minecraft.network.syncher.EntityDataAccessor<T>, T);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_2
+       3: iconst_0
+       4: invokevirtual #289                // Method m_276349_:(Lnet/minecraft/network/syncher/EntityDataAccessor;Ljava/lang/Object;Z)V
+       7: return
+
+  public <T> void m_276349_(net.minecraft.network.syncher.EntityDataAccessor<T>, T, boolean);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #279                // Method m_135379_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;
+       5: astore        4
+       7: iload_3
+       8: ifne          23
+      11: aload_2
+      12: aload         4
+      14: invokevirtual #283                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135403_:()Ljava/lang/Object;
+      17: invokestatic  #298                // Method org/apache/commons/lang3/ObjectUtils.notEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      20: ifeq          48
+      23: aload         4
+      25: aload_2
+      26: invokevirtual #302                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135397_:(Ljava/lang/Object;)V
+      29: aload_0
+      30: getfield      #50                 // Field f_135344_:Lnet/minecraft/world/entity/Entity;
+      33: aload_1
+      34: invokevirtual #306                // Method net/minecraft/world/entity/Entity.m_7350_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)V
+      37: aload         4
+      39: iconst_1
+      40: invokevirtual #310                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135401_:(Z)V
+      43: aload_0
+      44: iconst_1
+      45: putfield      #312                // Field f_135348_:Z
+      48: return
+
+  public boolean m_135352_();
+    Code:
+       0: aload_0
+       1: getfield      #312                // Field f_135348_:Z
+       4: ireturn
+
+  public java.util.List<net.minecraft.network.syncher.SynchedEntityData$DataValue<?>> m_135378_();
+    Code:
+       0: aconst_null
+       1: astore_1
+       2: aload_0
+       3: getfield      #312                // Field f_135348_:Z
+       6: ifeq          109
+       9: aload_0
+      10: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      13: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+      18: invokeinterface #213,  1          // InterfaceMethod java/util/concurrent/locks/Lock.lock:()V
+      23: aload_0
+      24: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      27: invokeinterface #324,  1          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+      32: invokeinterface #330,  1          // InterfaceMethod it/unimi/dsi/fastutil/objects/ObjectCollection.iterator:()Lit/unimi/dsi/fastutil/objects/ObjectIterator;
+      37: astore_2
+      38: aload_2
+      39: invokeinterface #337,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      44: ifeq          95
+      47: aload_2
+      48: invokeinterface #340,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      53: checkcast     #9                  // class net/minecraft/network/syncher/SynchedEntityData$DataItem
+      56: astore_3
+      57: aload_3
+      58: invokevirtual #343                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135406_:()Z
+      61: ifeq          92
+      64: aload_3
+      65: iconst_0
+      66: invokevirtual #310                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135401_:(Z)V
+      69: aload_1
+      70: ifnonnull     81
+      73: new           #345                // class java/util/ArrayList
+      76: dup
+      77: invokespecial #346                // Method java/util/ArrayList."<init>":()V
+      80: astore_1
+      81: aload_1
+      82: aload_3
+      83: invokevirtual #350                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_253123_:()Lnet/minecraft/network/syncher/SynchedEntityData$DataValue;
+      86: invokeinterface #353,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      91: pop
+      92: goto          38
+      95: aload_0
+      96: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      99: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+     104: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+     109: aload_0
+     110: iconst_0
+     111: putfield      #312                // Field f_135348_:Z
+     114: aload_1
+     115: areturn
+
+  public java.util.List<net.minecraft.network.syncher.SynchedEntityData$DataValue<?>> m_252804_();
+    Code:
+       0: aconst_null
+       1: astore_1
+       2: aload_0
+       3: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+       6: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+      11: invokeinterface #213,  1          // InterfaceMethod java/util/concurrent/locks/Lock.lock:()V
+      16: aload_0
+      17: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      20: invokeinterface #324,  1          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.values:()Lit/unimi/dsi/fastutil/objects/ObjectCollection;
+      25: invokeinterface #330,  1          // InterfaceMethod it/unimi/dsi/fastutil/objects/ObjectCollection.iterator:()Lit/unimi/dsi/fastutil/objects/ObjectIterator;
+      30: astore_2
+      31: aload_2
+      32: invokeinterface #337,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      37: ifeq          83
+      40: aload_2
+      41: invokeinterface #340,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      46: checkcast     #9                  // class net/minecraft/network/syncher/SynchedEntityData$DataItem
+      49: astore_3
+      50: aload_3
+      51: invokevirtual #361                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_252838_:()Z
+      54: ifne          80
+      57: aload_1
+      58: ifnonnull     69
+      61: new           #345                // class java/util/ArrayList
+      64: dup
+      65: invokespecial #346                // Method java/util/ArrayList."<init>":()V
+      68: astore_1
+      69: aload_1
+      70: aload_3
+      71: invokevirtual #350                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_253123_:()Lnet/minecraft/network/syncher/SynchedEntityData$DataValue;
+      74: invokeinterface #353,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      79: pop
+      80: goto          31
+      83: aload_0
+      84: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      87: invokeinterface #236,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.readLock:()Ljava/util/concurrent/locks/Lock;
+      92: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+      97: aload_1
+      98: areturn
+
+  public void m_135356_(java.util.List<net.minecraft.network.syncher.SynchedEntityData$DataValue<?>>);
+    Code:
+       0: aload_0
+       1: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+       4: invokeinterface #208,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.writeLock:()Ljava/util/concurrent/locks/Lock;
+       9: invokeinterface #213,  1          // InterfaceMethod java/util/concurrent/locks/Lock.lock:()V
+      14: aload_1
+      15: invokeinterface #367,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      20: astore_2
+      21: aload_2
+      22: invokeinterface #337,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      27: ifeq          85
+      30: aload_2
+      31: invokeinterface #340,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      36: checkcast     #7                  // class net/minecraft/network/syncher/SynchedEntityData$DataValue
+      39: astore_3
+      40: aload_0
+      41: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+      44: aload_3
+      45: getfield      #370                // Field net/minecraft/network/syncher/SynchedEntityData$DataValue.f_252469_:I
+      48: invokeinterface #240,  2          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.get:(I)Ljava/lang/Object;
+      53: checkcast     #9                  // class net/minecraft/network/syncher/SynchedEntityData$DataItem
+      56: astore        4
+      58: aload         4
+      60: ifnull        82
+      63: aload_0
+      64: aload         4
+      66: aload_3
+      67: invokevirtual #374                // Method m_135375_:(Lnet/minecraft/network/syncher/SynchedEntityData$DataItem;Lnet/minecraft/network/syncher/SynchedEntityData$DataValue;)V
+      70: aload_0
+      71: getfield      #50                 // Field f_135344_:Lnet/minecraft/world/entity/Entity;
+      74: aload         4
+      76: invokevirtual #378                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135396_:()Lnet/minecraft/network/syncher/EntityDataAccessor;
+      79: invokevirtual #306                // Method net/minecraft/world/entity/Entity.m_7350_:(Lnet/minecraft/network/syncher/EntityDataAccessor;)V
+      82: goto          21
+      85: aload_0
+      86: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+      89: invokeinterface #208,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.writeLock:()Ljava/util/concurrent/locks/Lock;
+      94: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+      99: goto          121
+     102: astore        5
+     104: aload_0
+     105: getfield      #48                 // Field f_135346_:Ljava/util/concurrent/locks/ReadWriteLock;
+     108: invokeinterface #208,  1          // InterfaceMethod java/util/concurrent/locks/ReadWriteLock.writeLock:()Ljava/util/concurrent/locks/Lock;
+     113: invokeinterface #219,  1          // InterfaceMethod java/util/concurrent/locks/Lock.unlock:()V
+     118: aload         5
+     120: athrow
+     121: aload_0
+     122: getfield      #50                 // Field f_135344_:Lnet/minecraft/world/entity/Entity;
+     125: aload_1
+     126: invokevirtual #381                // Method net/minecraft/world/entity/Entity.m_269505_:(Ljava/util/List;)V
+     129: return
+    Exception table:
+       from    to  target type
+          14    85   102   any
+         102   104   102   any
+
+  private <T> void m_135375_(net.minecraft.network.syncher.SynchedEntityData$DataItem<T>, net.minecraft.network.syncher.SynchedEntityData$DataValue<?>);
+    Code:
+       0: aload_2
+       1: invokevirtual #389                // Method net/minecraft/network/syncher/SynchedEntityData$DataValue.f_252511_:()Lnet/minecraft/network/syncher/EntityDataSerializer;
+       4: aload_1
+       5: getfield      #392                // Field net/minecraft/network/syncher/SynchedEntityData$DataItem.f_135390_:Lnet/minecraft/network/syncher/EntityDataAccessor;
+       8: invokevirtual #180                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135016_:()Lnet/minecraft/network/syncher/EntityDataSerializer;
+      11: invokestatic  #396                // Method java/util/Objects.equals:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      14: ifne          93
+      17: new           #398                // class java/lang/IllegalStateException
+      20: dup
+      21: getstatic     #404                // Field java/util/Locale.ROOT:Ljava/util/Locale;
+      24: ldc_w         #406                // String Invalid entity data item type for field %d on entity %s: old=%s(%s), new=%s(%s)
+      27: bipush        6
+      29: anewarray     #4                  // class java/lang/Object
+      32: dup
+      33: iconst_0
+      34: aload_1
+      35: getfield      #392                // Field net/minecraft/network/syncher/SynchedEntityData$DataItem.f_135390_:Lnet/minecraft/network/syncher/EntityDataAccessor;
+      38: invokevirtual #168                // Method net/minecraft/network/syncher/EntityDataAccessor.m_135015_:()I
+      41: invokestatic  #412                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      44: aastore
+      45: dup
+      46: iconst_1
+      47: aload_0
+      48: getfield      #50                 // Field f_135344_:Lnet/minecraft/world/entity/Entity;
+      51: aastore
+      52: dup
+      53: iconst_2
+      54: aload_1
+      55: getfield      #415                // Field net/minecraft/network/syncher/SynchedEntityData$DataItem.f_135391_:Ljava/lang/Object;
+      58: aastore
+      59: dup
+      60: iconst_3
+      61: aload_1
+      62: getfield      #415                // Field net/minecraft/network/syncher/SynchedEntityData$DataItem.f_135391_:Ljava/lang/Object;
+      65: invokevirtual #418                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      68: aastore
+      69: dup
+      70: iconst_4
+      71: aload_2
+      72: getfield      #421                // Field net/minecraft/network/syncher/SynchedEntityData$DataValue.f_252525_:Ljava/lang/Object;
+      75: aastore
+      76: dup
+      77: iconst_5
+      78: aload_2
+      79: getfield      #421                // Field net/minecraft/network/syncher/SynchedEntityData$DataValue.f_252525_:Ljava/lang/Object;
+      82: invokevirtual #418                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+      85: aastore
+      86: invokestatic  #427                // Method java/lang/String.format:(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      89: invokespecial #428                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      92: athrow
+      93: aload_1
+      94: aload_2
+      95: getfield      #421                // Field net/minecraft/network/syncher/SynchedEntityData$DataValue.f_252525_:Ljava/lang/Object;
+      98: invokevirtual #302                // Method net/minecraft/network/syncher/SynchedEntityData$DataItem.m_135397_:(Ljava/lang/Object;)V
+     101: return
+
+  public boolean m_135388_();
+    Code:
+       0: aload_0
+       1: getfield      #43                 // Field f_135345_:Lit/unimi/dsi/fastutil/ints/Int2ObjectMap;
+       4: invokeinterface #434,  1          // InterfaceMethod it/unimi/dsi/fastutil/ints/Int2ObjectMap.isEmpty:()Z
+       9: ireturn
+
+  static {};
+    Code:
+       0: invokestatic  #441                // Method com/mojang/logging/LogUtils.getLogger:()Lorg/slf4j/Logger;
+       3: putstatic     #86                 // Field f_135342_:Lorg/slf4j/Logger;
+       6: new           #443                // class it/unimi/dsi/fastutil/objects/Object2IntOpenHashMap
+       9: dup
+      10: invokespecial #444                // Method it/unimi/dsi/fastutil/objects/Object2IntOpenHashMap."<init>":()V
+      13: putstatic     #106                // Field f_135343_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;
+      16: return
+}

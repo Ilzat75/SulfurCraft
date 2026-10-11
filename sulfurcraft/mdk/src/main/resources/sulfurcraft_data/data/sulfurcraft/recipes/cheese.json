@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "minecraft:milk_bucket" },
+    { "item": "sulfurcraft:salt" },
+    { "item": "sulfurcraft:salt" }
+  ],
+  "result": {
+    "item": "sulfurcraft:cheese",
+    "count": 2
+  }
+}

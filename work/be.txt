@@ -1,0 +1,46 @@
+﻿Compiled from "BlockEntity.java"
+public abstract class net.minecraft.world.level.block.entity.BlockEntity extends net.minecraftforge.common.capabilities.CapabilityProvider<net.minecraft.world.level.block.entity.BlockEntity> implements net.minecraftforge.common.extensions.IForgeBlockEntity {
+  private static final org.slf4j.Logger f_58854_;
+  private final net.minecraft.world.level.block.entity.BlockEntityType<?> f_58855_;
+  protected net.minecraft.world.level.Level f_58857_;
+  protected final net.minecraft.core.BlockPos f_58858_;
+  protected boolean f_58859_;
+  private net.minecraft.world.level.block.state.BlockState f_58856_;
+  private net.minecraft.nbt.CompoundTag customPersistentData;
+  public net.minecraft.world.level.block.entity.BlockEntity(net.minecraft.world.level.block.entity.BlockEntityType<?>, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+  public static net.minecraft.core.BlockPos m_187472_(net.minecraft.nbt.CompoundTag);
+  public net.minecraft.world.level.Level m_58904_();
+  public void m_142339_(net.minecraft.world.level.Level);
+  public boolean m_58898_();
+  public void m_142466_(net.minecraft.nbt.CompoundTag);
+  protected void m_183515_(net.minecraft.nbt.CompoundTag);
+  public final net.minecraft.nbt.CompoundTag m_187480_();
+  public final net.minecraft.nbt.CompoundTag m_187481_();
+  public final net.minecraft.nbt.CompoundTag m_187482_();
+  private void m_187474_(net.minecraft.nbt.CompoundTag);
+  public static void m_187468_(net.minecraft.nbt.CompoundTag, net.minecraft.world.level.block.entity.BlockEntityType<?>);
+  public void m_187476_(net.minecraft.world.item.ItemStack);
+  private void m_187478_(net.minecraft.nbt.CompoundTag);
+  public static net.minecraft.world.level.block.entity.BlockEntity m_155241_(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, net.minecraft.nbt.CompoundTag);
+  public void m_6596_();
+  protected static void m_155232_(net.minecraft.world.level.Level, net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState);
+  public net.minecraft.core.BlockPos m_58899_();
+  public net.minecraft.world.level.block.state.BlockState m_58900_();
+  public net.minecraft.network.protocol.Packet<net.minecraft.network.protocol.game.ClientGamePacketListener> m_58483_();
+  public net.minecraft.nbt.CompoundTag m_5995_();
+  public boolean m_58901_();
+  public void m_7651_();
+  public void onChunkUnloaded();
+  public void m_6339_();
+  public boolean m_7531_(int, int);
+  public void m_58886_(net.minecraft.CrashReportCategory);
+  public boolean m_6326_();
+  public net.minecraft.world.level.block.entity.BlockEntityType<?> m_58903_();
+  public net.minecraft.nbt.CompoundTag getPersistentData();
+  public void m_155250_(net.minecraft.world.level.block.state.BlockState);
+  private java.lang.String m_257329_() throws java.lang.Exception;
+  private static net.minecraft.world.level.block.entity.BlockEntity m_58881_(java.lang.String);
+  private static net.minecraft.world.level.block.entity.BlockEntity m_155246_(net.minecraft.nbt.CompoundTag, java.lang.String, net.minecraft.world.level.block.entity.BlockEntity);
+  private static net.minecraft.world.level.block.entity.BlockEntity m_155236_(net.minecraft.core.BlockPos, net.minecraft.world.level.block.state.BlockState, java.lang.String, net.minecraft.world.level.block.entity.BlockEntityType);
+  static {};
+}

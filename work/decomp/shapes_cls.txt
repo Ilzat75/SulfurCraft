@@ -1,0 +1,33 @@
+﻿Compiled from "Shapes.java"
+public final class net.minecraft.world.phys.shapes.Shapes {
+  public static final double f_166025_;
+  public static final double f_166026_;
+  private static final net.minecraft.world.phys.shapes.VoxelShape f_83037_;
+  public static final net.minecraft.world.phys.shapes.VoxelShape f_83036_;
+  private static final net.minecraft.world.phys.shapes.VoxelShape f_83038_;
+  public net.minecraft.world.phys.shapes.Shapes();
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83040_();
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83144_();
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83048_(double, double, double, double, double, double);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_166049_(double, double, double, double, double, double);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83064_(net.minecraft.world.phys.AABB);
+  protected static int m_83041_(double, double);
+  protected static long m_83055_(int, int);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83110_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83124_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape...);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83113_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83148_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+  public static boolean m_83157_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+  private static boolean m_83103_(net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.DiscreteVoxelShape, net.minecraft.world.phys.shapes.DiscreteVoxelShape, net.minecraft.world.phys.shapes.BooleanOp);
+  public static double m_193135_(net.minecraft.core.Direction$Axis, net.minecraft.world.phys.AABB, java.lang.Iterable<net.minecraft.world.phys.shapes.VoxelShape>, double);
+  public static boolean m_83117_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.core.Direction);
+  public static net.minecraft.world.phys.shapes.VoxelShape m_83121_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.core.Direction);
+  public static boolean m_83152_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.core.Direction);
+  public static boolean m_83145_(net.minecraft.world.phys.shapes.VoxelShape, net.minecraft.world.phys.shapes.VoxelShape);
+  protected static net.minecraft.world.phys.shapes.IndexMerger m_83058_(int, it.unimi.dsi.fastutil.doubles.DoubleList, it.unimi.dsi.fastutil.doubles.DoubleList, boolean, boolean);
+  private static boolean m_83094_(net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.BooleanOp, net.minecraft.world.phys.shapes.DiscreteVoxelShape, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, int);
+  private static boolean m_166039_(net.minecraft.world.phys.shapes.IndexMerger, net.minecraft.world.phys.shapes.BooleanOp, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, int, int);
+  private static boolean m_166028_(net.minecraft.world.phys.shapes.BooleanOp, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, net.minecraft.world.phys.shapes.DiscreteVoxelShape, int, int, int, int, int);
+  private static net.minecraft.world.phys.shapes.CubeVoxelShape m_83156_();
+  static {};
+}

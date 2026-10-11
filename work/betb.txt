@@ -1,0 +1,8 @@
+﻿Compiled from "BlockEntityType.java"
+public final class net.minecraft.world.level.block.entity.BlockEntityType$Builder<T extends net.minecraft.world.level.block.entity.BlockEntity> {
+  private final net.minecraft.world.level.block.entity.BlockEntityType$BlockEntitySupplier<? extends T> f_58959_;
+  final java.util.Set<net.minecraft.world.level.block.Block> f_58960_;
+  private net.minecraft.world.level.block.entity.BlockEntityType$Builder(net.minecraft.world.level.block.entity.BlockEntityType$BlockEntitySupplier<? extends T>, java.util.Set<net.minecraft.world.level.block.Block>);
+  public static <T extends net.minecraft.world.level.block.entity.BlockEntity> net.minecraft.world.level.block.entity.BlockEntityType$Builder<T> m_155273_(net.minecraft.world.level.block.entity.BlockEntityType$BlockEntitySupplier<? extends T>, net.minecraft.world.level.block.Block...);
+  public net.minecraft.world.level.block.entity.BlockEntityType<T> m_58966_(com.mojang.datafixers.types.Type<?>);
+}
